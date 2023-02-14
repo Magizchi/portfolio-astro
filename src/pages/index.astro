@@ -6,13 +6,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="fr"
+  class="h-screen bg-[url('../../public/repeat-unsplash.jpg')] bg-contain"
+>
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
-    <Header title={SITE_TITLE} />
-    <main>
+  <body class="bg-transparent m-0 p-0 w-full">
+    <Header />
+    <!-- <main>
       <h1 class="bg-red-200">🧑‍🚀 Hello, Astronaut!</h1>
       <p>
         Welcome to the official <a href="https://astro.build/">Astro</a> blog starter
@@ -58,7 +61,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           >astro-blog-template
         </a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
       </p>
-    </main>
+    </main> -->
     <Footer />
   </body>
 </html>
