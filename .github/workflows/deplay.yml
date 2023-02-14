@@ -9,9 +9,9 @@ jobs:
       - name: SSH test
         uses: appleboy/ssh-action@master
         with:
-          HOST: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          KEY: ${{ secrets.SSHKEY }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
           script: |
             cd /var/www/portefolio_astro
             sudo git pull
