@@ -12,7 +12,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          key: ${{ secrets.SSHKEY }}
           script: |
             cd /var/www/portefolio_astro
             sudo git pull
