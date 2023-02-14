@@ -9,7 +9,7 @@ jobs:
       - name: SSH test
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          server: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
