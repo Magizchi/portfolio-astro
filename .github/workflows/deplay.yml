@@ -1,0 +1,19 @@
+name: Deploy porteFolio-V2
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH test
+        uses: appleboy/ssh-action@master
+        with:
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          KEY: ${{ secrets.SSHKEY }}
+          script: |
+            cd /var/www/portefolio_astro
+            sudo git pull
+            sudo npm install
+            sudo npm run build
