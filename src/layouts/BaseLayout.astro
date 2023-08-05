@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+
+const { image, title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr" data-theme="lofi">
+  <head>
+    <BaseHead title={title} description={description} image={image} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main class="container mx-auto px-4 max-w-6xl">
+        <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
