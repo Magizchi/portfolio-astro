@@ -63,7 +63,7 @@ export const info = {
                 {
                     mission: "Suivi de qualité, maintenance et mise en service",
                     activity: [
-                        "- J'ai participé à la mise en place d'un parc réseau comprenant des switchs, des serveurs et des ordinateurs. Mon rôle a consisté à concevoir et installer l'infrastructure réseau, en assurant la configuration et le déploiement des équipements. J'ai également pris en charge la gestion des serveurs pour garantir leur bon fonctionnement et leur sécurité.",
+                        "- J'ai participé à la mise en place d'un parc réseau comprenant des switchs, des serveurs et des ordinateurs. Mon rôle a consisté à concevoir et installer l'infrastructure réseau, en assurant la configuration et le déploiement des équipements.",
                         "- J'ai été en charge de la maintenance des automates responsables de la gestion de l'éclairage. Mon travail consistait à effectuer des inspections régulières, des diagnostics approfondis et des interventions de maintenance préventive et curative sur les automates. "
                     ],
                 }
@@ -83,11 +83,7 @@ export const info = {
                         "- Création d'une base de données client (mongodb, noSQL)",
                         "- Gestion d'envois de mail",
                         "- Implémentation Stripe pour l'abonnement et cartes cadeau",
-                        "- Création des routes avec la methode API REST",
-                        // "- Tout d'abord, j'ai créé la page d'inscription en utilisant les composants de Material UI pour une interface utilisateur moderne et attrayante. Ensuite, nous avons mis en place une base de données client en utilisant MongoDB, une solution NoSQL, pour assurer une gestion efficace des données. Pour améliorer l'expérience utilisateur, nous avons implémenté une fonctionnalité d'envoi de mails pour les notifications et la communication avec les utilisateurs.",
-                        // "- Pour faciliter le processus de paiement, nous avons intégré Stripe, une plateforme de paiement en ligne, pour gérer les abonnements et les cartes cadeaux. Cela permet aux utilisateurs de bénéficier d'une expérience de paiement sécurisée.",
-                        // "- une API REST pour le backend de l'application, nous avons suivi une approche méthodique. Tout d'abord, nous avons choisi un langage de programmation approprié pour notre serveur, comme Node.js ou Python avec Flask ou Django. Ensuite, nous avons créé les différentes routes qui permettent à notre application de communiquer avec le serveur."
-                    ],
+                        "- Création des routes avec la methode API REST",],
                     technologies: "React, Node.js, Express, Material UI, HTML, CSS, mailgun, stripe",
                 },
             ],
