@@ -12,12 +12,12 @@ const detailsReversed = details.sort((a: { number: number; },b: { number: number
           <p class="text-sm italic text-gray-700">{detail.startDate} {detail.endDate? "-": ""} {detail.endDate}</p>
         </div>
         <p class="font-semibold">{detail.post}</p>
-        <ul class="mt-3 ml-3">
+        <ul class="mt-3">
           {detail.description.map((item:any) => (
             <li class="dark:text-gray mt-3 max-w-3xl">
               <div class="flex flex-col">
                 <p class="font-medium mr-2 underline">{item.mission}</p>
-                <ul class="ml-2">{item?.activity?.map((act:any)=> <p>{act}</p>)}</ul>
+                <ul class="">{item?.activity?.map((act:any)=> <p>{act}</p>)}</ul>
                 {item.technologies ? <p class="mt-1 italic"><span class="mr-2 underline">Environnement technique:</span>{item.technologies}</p> : ""}
               </div>
             </li>
