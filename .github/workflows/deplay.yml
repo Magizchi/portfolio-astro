@@ -1,13 +1,18 @@
 name: Deploy porteFolio-V2
 
-on: [push]
+on:
+  branches:
+    - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: local
-        with:
-          script: |
-            sudo npm install
-            sudo npm run build
+      - name: Install
+        run: npm ci
+      
+      - name: build
+        run: npm run build
+      
+      
+      
