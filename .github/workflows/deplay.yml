@@ -1,8 +1,9 @@
 name: Deploy porteFolio-V2
 
 on:
-  branches:
-    - test-git-actions 
+  push:
+    branches:
+      - test-git-actions 
 
 jobs:
   build:
