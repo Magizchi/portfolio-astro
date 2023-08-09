@@ -10,10 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install
-        run: npm ci
+        run: npm install
       
       - name: build
         run: npm run build
+
+      - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@v4.3.3
+          with:
+            branch: gh-pages
+            folder: ./dist
       
 
       
