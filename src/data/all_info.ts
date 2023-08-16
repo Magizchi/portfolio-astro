@@ -1,7 +1,10 @@
 export const info = {
     baseUrl: "",
-    name: "JEAN CASTOR",
+    fullName: "Rajanan GANESLINGAM",
+    lastName: "GANESLINGAM",
+    firstName: "Rajanan",
     jobDescription: "Developpeur Web",
+    description: "Je suis un développeur full stack avec 4 ans d'expérience dans la création d'applications web. Ma spécialisation en React.js, Node.js et les langages essentiels tels que JavaScript, HTML et CSS m'a permis de créer des interfaces interactives et esthétiques. Mon parcours m'a motivé à rester constamment à l'affût des dernières avancées technologiques, alimentant ainsi ma passion pour le développement et me poussant à repousser les limites.",
     about: "",
 
     mission: '',
@@ -22,6 +25,7 @@ export const info = {
                     ],
                 }
             ],
+            hide: true
         },
         {
             number: 2,
@@ -37,6 +41,7 @@ export const info = {
                     ],
                 }
             ],
+            hide: true
         },
         {
             number: 3,
@@ -52,6 +57,7 @@ export const info = {
                     ],
                 }
             ],
+            hide: true
         },
         {
             number: 4,
@@ -68,6 +74,7 @@ export const info = {
                     ],
                 }
             ],
+            hide: true
         },
         {
             number: 5,
@@ -77,7 +84,7 @@ export const info = {
             post: "Développeur Full-Stack (Reactjs, Nodejs)",
             description: [
                 {
-                    mission: `Plate-forme e-commerce qui propose un abonnement pour recevoir des produits dans des coffrets chaque mois :`,
+                    mission: `Plateforme e-commerce qui propose un abonnement pour recevoir des produits dans des coffrets chaque mois :`,
                     activity: [
                         "- Création de la page d'inscription avec des composant de Material UI",
                         "- Création d'une base de données client (mongodb, noSQL)",
@@ -87,6 +94,7 @@ export const info = {
                     technologies: "React, Node.js, Express, Material UI, HTML, CSS, mailgun, stripe",
                 },
             ],
+            hide: false
         },
         {
             number: 6,
@@ -106,7 +114,8 @@ export const info = {
                     ],
                     technologies: "React, Node.js, HTML, CSS",
                 },
-            ]
+            ],
+            hide: false
         },
         {
             number: 7,
@@ -116,13 +125,14 @@ export const info = {
             endDate: "Dec 2019",
             description: [
                 {
-                    mission: "Plate-forme qui propose des droits sur des romans pour le monde du cinéma",
+                    mission: "Plateforme qui propose des droits sur des romans pour le monde du cinéma",
                     activity: [
                         "- Migration (développement et Intégration) du site web PHP en React"
                     ],
                     technologies: "React, HTML, CSS",
                 },
-            ]
+            ],
+            hide: false
         },
         {
             number: 8,
@@ -134,7 +144,7 @@ export const info = {
                 {
                     mission: "Projet: MediMatrix - Web/Mobile",
                     activity: [
-                        "- Plate-forme qui permet d'améliorer la gestion des livraisons des colis",
+                        "- Plateforme qui permet d'améliorer la gestion des livraisons des colis",
                         "- Affichage des documents/colis/feuille de routes",
                         "- Affichage des points à livrer sur une carte, avec la position du livreur",
                         "- Gestion du chargement/livraison depuis le PDA",
@@ -144,7 +154,7 @@ export const info = {
                 {
                     mission: "Projet: Parashop - Web/Mobile",
                     activity: [
-                        "Plate-forme qui permet d'améliorer la gestion de stock",
+                        "Plateforme qui permet d'améliorer la gestion de stock",
                         "- Gestion de stock (inventaires; réception; entrée/sortie stock)",
                         "- Scan des produits depuis le PDA(appli mobile)",
                         "- Utilisation de AntDesgin",
@@ -152,8 +162,8 @@ export const info = {
                     ],
                     technologies: "React, HTML, CSS, TailwindCss, Python(Flask), OVH, AntDesgin",
                 },
-            ]
-
+            ],
+            hide: false
         },
         {
             number: 9,
@@ -163,7 +173,7 @@ export const info = {
             endDate: "poste actuel",
             description: [
                 {
-                    mission: "Mission 1",
+                    mission: "Plateforme ",
                     activity: [
                         "- Finir la création/téléchargement/génération des pdf",
                         "- Corriger les bug (affichage, fonctionnelle)",
@@ -179,51 +189,14 @@ export const info = {
                     ],
                     technologies: "Angular, weblate, posthog, i18n, typescript, git"
                 }
-            ]
+            ],
+            hide: false
         }
     ],
 
-    education: [
-        {
-            name: "Pakistan Institute of Professional Science & Technology (PIPS-TECH)",
-            location: "Karāchi, Sindh, Pakistan",
-            startDate: "2019",
-            endDate: "2022",
-            description: [
-                "Diploma of Associate Engineering,  Computer Information Technology (CIT)",
-            ],
-        },
-        {
-            name: "Govt. Degree Boys College Buffer Zone",
-            location: "Karāchi, Sindh, Pakistan",
-            startDate: "2018",
-            endDate: "2020",
-            description: ["Intermediate, Pre-Engineering"],
-        },
-        {
-            name: "Ghazi Foundation Schools & Colleges",
-            location: "Karāchi, Sindh, Pakistan",
-            startDate: "2016",
-            endDate: "2018",
-            description: ["Matriculation,  Computer Science"],
-        },
-    ],
+    education: [],
 
-    socialMedia: {
-        facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-        twitter: "https://twitter.com/Uzzii_21",
-        github: "https://github.com/uzzii-21",
-        email: "uzairahmed@74372gmail.com",
-        linkedin: "https://www.linkedin.com/in/uzzii21/",
-    },
+    socialMedia: {},
 
-    projects: [
-        {
-            title: "Astro Portfolio",
-            isFeatured: true,
-            thumbnail: "/assets/images/astro-portfolio.png",
-            githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-            liveUrl: "https://astro-portfolio-uzair.vercel.app/",
-        },
-    ],
+    projects: [],
 };
