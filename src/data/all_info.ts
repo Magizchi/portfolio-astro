@@ -199,7 +199,16 @@ export const info = {
 
     socialMedia: {},
 
-    projects: [],
+    projects: [
+        {
+            title: 'Portfolio-astro',
+            desc: 'Site web qui me permet de mettre en avant mes experiences et mes projets',
+            img: '/post_img.webp',
+            techno: ['Astro', 'Tailwindcss'],
+            url: 'https://rajanan.dev',
+            githubUrl: 'https://github.com/Magizchi/portfolio-astro'
+        }
+    ]
 };
 
 
