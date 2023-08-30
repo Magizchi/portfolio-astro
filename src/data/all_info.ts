@@ -174,7 +174,6 @@ export const info = {
             description: [
                 {
                     mission: "Plateforme qui permet de gérer les ordres de virement",
-                    // mission: "L'application bancaire permet aux clients de créer des ordres de virement, avec la possibilité de visualiser la liste des ordres de virement créés, de générer des PDF pour ces ordres, et enfin d'enregistrer ces informations sous forme de fichiers PDF. ",
                     activity: [
                         "- Finir la création/téléchargement/génération des pdf",
                         "- Corriger les bug (affichage, fonctionnelle)",
@@ -183,7 +182,7 @@ export const info = {
                     technologies: "Vuejs(Nuxtjs), Nestjs, GraphQl, typescript, POSTGRESQL, git"
                 },
                 {
-                    mission: "Plateforme qui regroupe des organismes",
+                    mission: "Soliguide rassemble tous les services, initiatives et ressources pour les personnes qui rencontrent une difficulté",
                     activity: [
                         "- Implementation des POSTHOG",
                         "- Mise place des clés de traduction (weblate)"
