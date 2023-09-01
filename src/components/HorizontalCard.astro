@@ -17,6 +17,7 @@ const detailsReversed = details.sort((a: { number: number; },b: { number: number
             <li class="dark:text-gray mt-3 max-w-3xl">
               <div class="flex flex-col">
                 <p class="font-medium mr-2 underline">{item.mission}</p>
+                {item.description && <p>{item.description}</p>}
                 <ul class="">{item?.activity?.map((act:any)=> <p>{act}</p>)}</ul>
                 {item.technologies ? <p class="mt-1 italic"><span class="mr-2 underline">Environnement technique:</span>{item.technologies}</p> : ""}
               </div>

@@ -174,6 +174,7 @@ export const info = {
             description: [
                 {
                     mission: "Plateforme qui permet de gérer les ordres de virement",
+                    description: "",
                     activity: [
                         "- Finir la création/téléchargement/génération des pdf",
                         "- Corriger les bug (affichage, fonctionnelle)",
@@ -182,7 +183,8 @@ export const info = {
                     technologies: "Vuejs(Nuxtjs), Nestjs, GraphQl, typescript, POSTGRESQL, git"
                 },
                 {
-                    mission: "Soliguide rassemble tous les services, initiatives et ressources pour les personnes qui rencontrent une difficulté",
+                    mission: "Mécénat de compétence",
+                    description: "Soliguide rassemble tous les services, initiatives et ressources pour les personnes qui rencontrent une difficulté",
                     activity: [
                         "- Implementation des POSTHOG",
                         "- Mise place des clés de traduction (weblate)"

@@ -1,73 +1,29 @@
-# Astro Starter Kit: Blog
+<h1 $$ align="center">Portfolio-Astro</h1>
 
-```
-npm create astro@latest -- --template blog
-```
+Portfolio-Astro est un projet de site web personnel qui utilise les technologies Astro et Tailwind CSS.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
+## Technologies Utilisées
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro**: Astro est un framework web qui génère des sites web ultra-rapides en utilisant la technologie du rendu statique et du rendu sur le serveur (SSR) en fonction des besoins. Il permet de créer des sites web performants avec une expérience de développement moderne. [Lien](https://astro.build)
 
+- **Tailwind CSS**: Tailwind CSS est un framework CSS utilitaire qui permet de créer rapidement et efficacement des interfaces utilisateur personnalisées en utilisant des classes CSS pré-définies. Il offre une flexibilité et une extensibilité exceptionnelles pour la conception de l'interface utilisateur. [Lien](https://tailwindcss.com/)
 
-![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
+## Architecture des Dossiers
 
-Features:
+Voici l'architecture des dossiers de notre projet "Astro Portfolio" :
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- `src/`: Ce dossier contient le code source de notre application. Il est divisé en sous-dossiers pour organiser les composants, les mises en page, les pages et les styles.
 
-## 🚀 Project Structure
+- `content/`: Ce dossier contient des fichiers Markdown (.md) qui servent à générer les pages de votre site. Chaque fichier .md peut contenir du contenu textuel et des métadonnées pour les pages.
 
-Inside of your Astro project, you'll see the following folders and files:
+- `data/`: Ce dossier contient des fichiers JSON (.json) qui stockent des informations structurées pour votre site. Par exemple, vous pourriez avoir un fichier projectInfo.json qui contient des données sur vos projets et un fichier siteInfo.json pour les informations globales du site.
 
-```
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+- `layouts/`: Comme expliqué précédemment, ce dossier contient des mises en page réutilisables telles que MainLayout.astro qui définissent la structure globale de vos pages. Les composants peuvent être imbriqués dans ces mises en page pour une organisation plus modulaire.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- `astro.config.js`: Le fichier de configuration d'Astro qui permet de définir les options de build et les plugins utilisés.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+- `package.json`: Le fichier de configuration npm qui répertorie les dépendances et les scripts de notre projet.
 
 ## Template
 
-[template experience](https://astro.build/themes/details/astro-portfolio/)
-[template projets](https://astro.build/themes/details/astrofy/)
+Template utilisé pour faire le site pour la partie [experience](https://astro.build/themes/details/astro-portfolio/) et pour la partie [projets](https://astro.build/themes/details/astrofy/)
