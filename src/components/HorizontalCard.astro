@@ -2,8 +2,8 @@
 const { details } = Astro.props;
 const detailsReversed = details.sort((a: { number: number; },b: { number: number; }) => b.number - a.number)
 ---
-<section class="flex flex-row items-start mt-28">
-  <h2 class="w-60 mt-5 font-bold text-xl">EXPERIENCE</h2>
+<section class="flex flex-col md:flex-row items-start mt-28 mx-5 md:mx-0">
+  <h2 class="w-60 mt-5 font-bold text-xl">EXPERIENCES</h2>
   <div class="flex flex-col w-full">
     {detailsReversed.map((detail:any) => 
       !detail.hide && <article class="my-5">
