@@ -91,7 +91,7 @@ export const info = {
                         "- Gestion d'envois de mail",
                         "- Implémentation Stripe pour l'abonnement et cartes cadeau",
                         "- Création des routes avec la methode API REST",],
-                    technologies: "React, Node.js, Express, Material UI, HTML, CSS, mailgun, stripe",
+                    technologies: "React,React-Native(Expo), Node.js, Express, Material UI, HTML, CSS, mailgun, stripe",
                 },
             ],
             hide: false
@@ -149,7 +149,7 @@ export const info = {
                         "- Affichage des points à livrer sur une carte, avec la position du livreur",
                         "- Gestion du chargement/livraison depuis le PDA",
                     ],
-                    technologies: "React, HTML, CSS, TailwindCss, Python(Flask), OVH",
+                    technologies: "React, React-Native(Expo),Javascript, Typescript, Python(Flask), HTML, CSS, TailwindCss, Python(Flask), OVH, Git, OVH, SQL(MariaDB)",
                 },
                 {
                     mission: "Projet: Parashop - Web/Mobile",
@@ -160,7 +160,7 @@ export const info = {
                         "- Utilisation de AntDesgin",
                         "- Gestion d'impression depuis le PDA et le BO",
                     ],
-                    technologies: "React, HTML, CSS, TailwindCss, Python(Flask), OVH, AntDesgin",
+                    technologies: "React, React-Native(Expo), Javascript, Typescript, HTML, CSS, TailwindCss, Python(Flask), OVH, AntDesgin, SQL(MariaDB), Git, Docker",
                 },
             ],
             hide: false
@@ -180,7 +180,7 @@ export const info = {
                         "- Corriger les bug (affichage, fonctionnelle)",
                         "- Créer les pages d'affichage des données en utilisant les composant existant"
                     ],
-                    technologies: "Vuejs(Nuxtjs), Nestjs, GraphQl, typescript, POSTGRESQL, git"
+                    technologies: "Vuejs(Nuxtjs), Nestjs, GraphQl, typescript, POSTGRESQL, Git"
                 },
                 {
                     mission: "Mécénat de compétence",
@@ -189,7 +189,7 @@ export const info = {
                         "- Implementation des POSTHOG",
                         "- Mise place des clés de traduction (weblate)"
                     ],
-                    technologies: "Angular, weblate, posthog, i18n, typescript, git"
+                    technologies: "Angular, weblate, posthog, i18n, typescript, Git"
                 }
             ],
             hide: false
