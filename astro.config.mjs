@@ -9,4 +9,7 @@ import image from "@astrojs/image";
 export default defineConfig({
   site: 'https://magizchi.github.io/portfolio_astro/',
   integrations: [mdx(), sitemap(), tailwind({}), image()],
+  redirects: {
+    '/': '/experiences'
+  }
 });
