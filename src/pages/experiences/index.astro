@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Experience from "../../components/HorizontalCard.astro";
+import { info } from "../../data/all_info";
+import { SITE_TITLE } from "../../consts";
+import Hero from "../../components/Hero.astro";
+---
+
+<BaseLayout title={SITE_TITLE}>
+  <Hero />
+  <Experience title={"EXPERIENCE"} details={info.experience} />
+</BaseLayout>
