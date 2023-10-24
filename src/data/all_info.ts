@@ -149,7 +149,7 @@ export const info = {
                         "- Affichage des points à livrer sur une carte, avec la position du livreur",
                         "- Gestion du chargement/livraison depuis le PDA",
                     ],
-                    technologies: "React, React-Native(Expo),Javascript, Typescript, Python(Flask), HTML, CSS, TailwindCss, Python(Flask), OVH, Git, OVH, SQL(MariaDB)",
+                    technologies: "React, React-Native(Expo), Javascript, Typescript, Python(Flask), HTML, CSS, TailwindCss, OVH, Git, SQL(MariaDB), Docker",
                 },
                 {
                     mission: "Projet: Parashop - Web/Mobile",
