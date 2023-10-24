@@ -1,10 +1,21 @@
+---
+  import Link from "@components/atoms/link/Link.astro";
+  const nav = [
+    {
+      title: 'Expériences',
+      href:'/experiences'
+    },
+    {
+      title: 'Projets',
+      href:'/projets'
+    }
+  ]
+---
 <header class="w-full text-gray-700 bg-white shadow-sm body-font">
   <div class="container flex justify-between p-6 mx-auto">
     <h1 class="mb-2 font-bold md:mb-0">Rajanan.dev</h1>
     <nav class="flex text-base md:ml-auto">
-        <a href="/" class="mr-5 font-medium hover:text-gray-900">Expériences</a>
-        <a href="/projets" class="mr-5 font-medium hover:text-gray-900">Projets</a>
-        <!-- <a href="/contact" class="font-medium hover:text-gray-900">Contact</a> -->
+        {nav.map(item => <Link {...item} />)}
     </nav>
   </div>
 </header>
