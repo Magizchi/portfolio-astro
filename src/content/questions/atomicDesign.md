@@ -5,39 +5,33 @@ domaine: "architecture"
 number: 1
 ---
 
-## A METTE EN FORME
 
 ### Question: A quoi sert l'Atomic design
 
 ## Qui ?
 
-Les developpeurs, s'assure du bon developpement du site avec la méthode d'atomic design
+Les développeurs, s'assure du bon développement du site avec la méthode d'atomic design
 
-## Quoi
+## Quoi ?
 
-l'Atomic design est une méthode, qui permet de créer une architecture simple pour le developpement des composants un site web
+L'Atomic design est une méthode, qui permet de créer une architecture modulaire simple pour le développement des composants un site web
 
-## Où
+## Où ?
 
-Dans le développement du site web coté front-end
+Dans le développement du site web côité front-end
 
-## Quand
+## Quand ?
 
-En soit faut l'utiliser tous le temps, car il permet de simplifier le developpement
+A la conception des composants
 
-## Comment
+## Comment ?
 
-En créant des composant simple avec 1 ou 2 max balise html pour les atoms et en les combinants on peut créer le reste les moleculs/template/pages du site
+En créant des composant simple avec quelque balise html pour les atomes et en les combinant on peut créer le reste, les molécules/template/pages du site, en soit ça devient un système modulaire
 
-## Pourquoi
+## Pourquoi ?
 
-Cela permet qui simplifié de developpement du site, ce qui implique une meilleur maitenance, lecture, lisibilité, compréhention des composants et l'architecture du projet
+Cela permet de simplifier de développement du site, ce qui implique une meilleure maintenance, lecture, lisibilité, compréhension des composants et l'architecture du projet
 
 ## En Résumé
 
-L'atomic designe
-Au lieu de créer un page directement, on le divise en plusieurs partie/componsants 
-C'est de créer des composant simple(atoms) avec des balises html (button, h1, input, etc)
-Regrouper pour créer des composants plus grand(moleculs) qui permetteron plus tard comme base pour la création du la page web
-cela permet un meilleur construction du site, simplifié le developpement du site web
-cela permet aussi un meilleur lecture du code, histoire que sa soit lisible, pour eviter des pavé de code
+L'atomic design est méthode d'architecture qui permet de créer un système modulaire, utilisé dans la conception du site web le développeur avant de commencer à concevoir la page, il va commencer par agencer les composants, via cinq interfaces différentes: atomes, molécules, organismes, templates, pages. En créant une bibliothèque de composant cela permettra une meilleure organisation du développement, la lisibilité, la compréhension et un gain de temps lors du développement d'un site web.
