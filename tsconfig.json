@@ -21,7 +21,8 @@
        "@components/*": ["components/*"],
        "@data": ["data/all_info"],
        "@utils": ["utils"],
-       "@types": ["types"]
+       "@types": ["types"],
+       "@consts":["consts"]
      }
   },
 }
