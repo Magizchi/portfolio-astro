@@ -3,7 +3,7 @@ const { title, img, desc, githubUrl, url} = Astro.props;
 import { Image } from "@astrojs/image/components";
 ---
 
-<div class="rounded-lg group group-hover:shadow-xl transition ease-in-out hover:scale-[102%] ">
+<div class="rounded-lg group group-hover:shadow-xl hover:bg-gray-100 bg-with transition ease-in-out hover:scale-[102%] ">
     <div class="flex">
       {
         img && (
@@ -20,13 +20,13 @@ import { Image } from "@astrojs/image/components";
       <div class="grow w-full m-2 flex flex-col justify-between">
         <div>
           <h1 class="text-xl font-bold">
-            <a href={url} target="_blank" class="group-hover:text-blue-500">
+            <a href={url} target="_blank" class="text-blue-500 group-hover:underline">
               {title}
             </a>
           </h1>
           <p class="py-1 text-1xl">{desc}</p>
         </div>
-        <a href={githubUrl} target="_blank" class="group-hover:text-blue-500">Github</a>
+        <a href={githubUrl} target="_blank" class="text-blue-500 underline">Github</a>
       </div>
     </div>
 </div>
