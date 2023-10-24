@@ -1,0 +1,6 @@
+---
+const {title, href} = Astro.props;
+const underline = Astro.url.pathname === '/'+title.toLowerCase().replace(new RegExp(/[é]+/g),'e')
+---
+
+<a href={href} class=`mr-5 font-medium hover:text-gray-900 ${underline ? 'underline' : ''}`>{title}</a>
