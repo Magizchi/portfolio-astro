@@ -30,7 +30,7 @@ number: 1
 
 ### Pourquoi ?
 
- Cela permet de simplifier de développement du site, ce qui implique une meilleure maintenance, lecture, lisibilité, compréhension des composants et l'architecture du projet
+ Cela permet de simplifier le développement du site, ce qui implique une meilleure maintenance, lecture, lisibilité, compréhension des composants et l'architecture du projet
 
 ### En Résumé
 
