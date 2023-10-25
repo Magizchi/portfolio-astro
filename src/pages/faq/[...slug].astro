@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('questions');
+	return posts.map((post: { slug: any; }) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+// type Props = CollectionEntry<'questions'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+<style is:global>
+	h2 { margin-bottom: 20px!important; font-weight: bolder !important; font-size:larger !important;}
+	h3 {font-weight: bold !important; font-size:medium !important;}
+	p {margin-bottom: 15px !important;}
+</style>
+<BaseLayout>
+	<article class="max-w-3xl mx-auto">
+		<Content />
+	</article>
+</BaseLayout>

@@ -1,6 +1,6 @@
 ---
 const { title, img, desc, githubUrl, url} = Astro.props;
-import { Image } from "@astrojs/image/components";
+import { Image } from 'astro:assets';
 ---
 
 <div class="rounded-lg group group-hover:shadow-xl hover:bg-gray-100 bg-with transition ease-in-out hover:scale-[102%] ">
@@ -9,8 +9,8 @@ import { Image } from "@astrojs/image/components";
         img && (
           <Image
             src={img}
-            aspectRatio="16:9"
             width={750}
+            height={550}
             format="webp"
             alt={title}
             class="max-w-full md:max-w-[13rem] rounded-lg mr-2 hidden md:block"

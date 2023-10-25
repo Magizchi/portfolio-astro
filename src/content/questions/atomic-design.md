@@ -1,5 +1,5 @@
 ---
-title: "C'est quoi l'atomic design"
+title: "C'est quoi l'atomic design ?"
 sujet: "atomic design"
 domaine: "architecture"
 number: 1
