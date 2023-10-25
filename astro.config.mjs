@@ -7,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://rajanan.dev',
   integrations: [mdx(), sitemap(), tailwind({})],
-  redirects: {
-    '/': '/experiences'
-  }
+  // redirects: {
+  //   '/': '/experiences'
+  // }
 });
