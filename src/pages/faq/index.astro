@@ -9,7 +9,6 @@ const posts = (await getCollection('questions'))
 
 <BaseLayout>
 	<section>
-		<p>Pense bête / FAQ / b.a.-ba pour dev pffff</p>
 		<ul>
 			{
 				posts.map((post: { slug: any; data: { heroImage: string | null | undefined; title: unknown; pubDate: any; }; }) => (
