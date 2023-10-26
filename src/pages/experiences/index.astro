@@ -2,11 +2,11 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Experience from "@components/molecules/HorizontalCard/index.astro";
 import { info } from "@data";
-import { SITE_TITLE } from "@consts";
+import { SITE_DESCRIPTION_EXPERIENCE, SITE_TITLE_EXPERIENCE } from "@consts";
 import Hero from "@components/molecules/Hero/index.astro";
 ---
 
-<BaseLayout title={SITE_TITLE}>
+<BaseLayout title={SITE_TITLE_EXPERIENCE} description={SITE_DESCRIPTION_EXPERIENCE}>
   <Hero />
   <Experience title={"EXPERIENCE"} details={info.experience} />
 </BaseLayout>

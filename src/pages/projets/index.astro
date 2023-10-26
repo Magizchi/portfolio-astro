@@ -2,9 +2,10 @@
 import ProjectCard from "@components/molecules/ProjectCard/index.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import {info} from "@data"
+import { SITE_PROJECTS_DESCRIPTION, SITE_TITLE_PROJECTS } from "@consts";
 ---
 
-<BaseLayout>
+<BaseLayout title={SITE_TITLE_PROJECTS} description={SITE_PROJECTS_DESCRIPTION}>
     <section class="flex justify-center">
         <div class="flex flex-col max-w-[75%]">
             <h1 class="text-3xl w-full font-bold mt-10 mb-4">Projets</h1>
