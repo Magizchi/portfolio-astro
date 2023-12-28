@@ -5,6 +5,7 @@ domaine: "React"
 number: 2.1
 ---
 
+# A finir
 
 ## React Hooks: useState
 
@@ -40,7 +41,7 @@ number: 2.1
 
 ### Pourquoi ?
 
- Cela permet de sauvegarder des valeurs dans un composant et pouvoir le modifier sans re faire un rendu complet de la page 
+ Cela permet de sauvegarder des valeurs dans un composant et pouvoir le modifier sans re faire un rendu complet de la page
 
 ### En Résumé
 
