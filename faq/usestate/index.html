@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="fr" data-theme="lofi"><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.3.4"><!-- Canonical URL --><link rel="canonical" href="https://rajanan.dev/faq/usestate/"><!-- Primary Meta Tags --><title></title><meta name="title"><meta name="description" content="SITE_DESCRIPTION"><!-- Open Graph / Facebook --><!-- <meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} /> --><!-- Twitter --><!-- <meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} /> --><link rel="stylesheet" href="/_astro/index.ef45f7d3.css" />
+<style>h2{margin-bottom:20px!important;font-weight:bolder!important;font-size:larger!important}h3{font-weight:700!important;font-size:medium!important}p{margin-bottom:15px!important}
+footer[data-astro-cid-sz7xmlte]{padding:25px;text-align:center}
+</style></head><body><header class="w-full text-gray-700 bg-white shadow-sm body-font"><div class="container flex justify-between p-6 mx-auto"><h1 class="mb-2 font-bold md:mb-0">Rajanan.dev</h1><nav class="flex text-base md:ml-auto"><a href="/experiences" class="mr-5 font-medium hover:text-gray-900 ">Expériences</a><a href="/projets" class="mr-5 font-medium hover:text-gray-900 ">Projets</a></nav></div></header><main class="container mx-auto px-4 max-w-6xl"><article class="max-w-3xl mx-auto"><h1 id="a-finir">A finir</h1>
+<h2 id="react-hooks-usestate">React Hooks: useState</h2>
+<!-- ### (qui) Qui utilise les hooks ?
+
+ Toute la partie React sa sera le développeur -->
+<h3 id="quoi">Quoi?</h3>
+<p>useState est un Hook qui permet de gérer un ou plusieurs états dans un composant</p>
+<h3 id="où">Où ?</h3>
+<p>On l’utilise à la base des composants (ne peut être utiliser dans des boucles ou des conditions, ni en JS classique).</p>
+<h3 id="quand">Quand ?</h3>
+<p>On a besoin de gérer des données dans un composant</p>
+<h3 id="comment">Comment ?</h3>
+<p>Il suffit d’importer les useState depuis React, pour les utiliser, par contre c’est inutilisable avec les classes</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">   import</span><span style="color:#E1E4E8"> { useState } </span><span style="color:#F97583">from</span><span style="color:#E1E4E8"> react;</span></span>
+<span class="line"><span style="color:#F97583">   const</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">state</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">setState</span><span style="color:#E1E4E8">] </span><span style="color:#F97583">=</span><span style="color:#B392F0"> useState</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">Type</span><span style="color:#E1E4E8">>(init);</span></span></code></pre>
+<p>— <strong>init</strong> : Est la valeur par defaut qu’on initialise<br>
+— <strong>Type</strong> : Permet d’initier le Type du l’etat<br>
+— <strong>state</strong> : Est l’etat sauvegarder<br>
+— <strong>setState</strong> : Permet de modifier la valeur du ‘state’<br></p>
+<h3 id="pourquoi">Pourquoi ?</h3>
+<p>Cela permet de sauvegarder des valeurs dans un composant et pouvoir le modifier sans re faire un rendu complet de la page</p>
+<h3 id="en-résumé">En Résumé</h3>
+<p>Le useState est une fonctionnalité de React, qui permet de gérer un ou plusieurs état dans un composant.</p>
+<h3 id="source">Source</h3>
+<p><a href="https://react.dev/reference/react/useState">info useState</a></p></article></main><footer data-astro-cid-sz7xmlte>
+&copy; 2024rajanan.dev. All rights reserved.
+</footer></body></html>
