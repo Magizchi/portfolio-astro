@@ -20,4 +20,4 @@ LE REACTEUR : Plate-forme e-commerce qui propose un abonnement pour recevoir des
 * \- Gestion des envois de mails avec MailGun
 * \- Création et génération de cartes Cadeaux- Méthodologie Agile
 
-***Environnement technique*** : *React, Node.js, MongoDB, GitHub, Strip, MailGun*
+***Environnement technique*** : *React, Node.js, MongoDB, GitHub, Stripe, MailGun*
