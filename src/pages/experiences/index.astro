@@ -1,9 +1,8 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
-import Experience from '@components/molecules/HorizontalCard/index.astro';
-import { info } from '@data';
-import { SITE_DESCRIPTION_EXPERIENCE, SITE_TITLE_EXPERIENCE } from '@consts';
-import Hero from '@components/molecules/Hero/index.astro';
+import Experience from '@components/astro/molecules/HorizontalCard/index.astro';
+import { SITE_DESCRIPTION_EXPERIENCE, SITE_TITLE_EXPERIENCE } from '@constants/consts.ts';
+import Hero from '@components/astro/molecules/Hero/index.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
 const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');

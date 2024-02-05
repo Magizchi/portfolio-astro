@@ -1,27 +1,32 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
-const posts = (await getCollection('questions'))
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const posts = await getCollection('questions');
 ---
+
 <BaseLayout>
 	<section>
 		<ul>
 			{
-				posts.map((post: { slug: any; data: { heroImage: string | null | undefined; title: unknown; pubDate: any; }; }) => (
-					<li>
-						<div class="grow w-full m-2 flex flex-col justify-between">
-							<div>
-								<h2 class="text-xl font-bold">
-									<a href={`/faq/${post.slug}/`} class="text-blue-500 group-hover:underline">
-										{post.data.title}
-									</a>
-								</h2>
+				posts.map(
+					(post: {
+						slug: any;
+						data: { heroImage: string | null | undefined; title: unknown; pubDate: any };
+					}) => (
+						<li>
+							<div class="grow w-full m-2 flex flex-col justify-between">
+								<div>
+									<h2 class="text-xl font-bold">
+										<a href={`/faq/${post.slug}/`} class="text-blue-500 group-hover:underline">
+											{post.data.title}
+										</a>
+									</h2>
+								</div>
 							</div>
-						</div>
-					</li>
-				))
+						</li>
+					)
+				)
 			}
 		</ul>
 	</section>
 </BaseLayout>
-  
