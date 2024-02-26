@@ -9,3 +9,6 @@ export const SITE_DESCRIPTION_EXPERIENCE = 'Ici vous pouvez visualiser mes expé
 // PROJECT PAGE INFO
 export const SITE_TITLE_PROJECTS = 'rajanan.dev | Éxpositions';
 export const SITE_PROJECTS_DESCRIPTION = 'Ici vous pouvez visualiser les projets que j\'ai développés avec plusieurs techo diffèrent'
+
+export const link_LinkedIn = "https://www.linkedin.com/in/rajanan-ganesalingam/";
+export const link_Github = "https://github.com/Magizchi"
