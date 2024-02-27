@@ -1,15 +1,17 @@
 ---
-import ProjectCard from "@components/molecules/ProjectCard/index.astro";
-import BaseLayout from "@layouts/BaseLayout.astro";
-import {info} from "@data"
-import { SITE_PROJECTS_DESCRIPTION, SITE_TITLE_PROJECTS } from "@consts";
+import ProjectCard from '@components/astro/molecules/ProjectCard/index.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { SITE_PROJECTS_DESCRIPTION, SITE_TITLE_PROJECTS } from '@constants/consts';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const allProjects: CollectionEntry<'project'>[] = await getCollection('project');
 ---
 
 <BaseLayout title={SITE_TITLE_PROJECTS} description={SITE_PROJECTS_DESCRIPTION}>
-    <section class="flex justify-center">
-        <div class="flex flex-col max-w-[75%]">
-            <h1 class="text-3xl w-full font-bold mt-10 mb-4">Projets</h1>
-            {info.projects.map((item) => <ProjectCard {...item} />)}
-        </div>
-    </section>
+	<section class="flex justify-center">
+		<div class="flex flex-col max-w-[75%]">
+			<h1 class="text-3xl w-full font-bold mt-10 mb-4">Projets</h1>
+			{allProjects.map((item) => <ProjectCard {...item.data} />)}
+		</div>
+	</section>
 </BaseLayout>
