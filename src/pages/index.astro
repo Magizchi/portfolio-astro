@@ -1,6 +1,65 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE_TITLE } from '@constants/consts';
+import { link_Github, link_LinkedIn } from '@constants/consts';
+import BaseHead from '@components/astro/BaseHead.astro';
+import GithubLogo from '../../public/github-fill.svg?raw';
+import LinkedInLogo from '../../public/linkedin-box-fill.svg?raw';
 ---
 
-<BaseLayout title={SITE_TITLE}><h1>acceuil</h1></BaseLayout>
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html lang="fr">
+	<head>
+		<BaseHead title="Rajanan.dev | Développer Full-Stack" description="Mon portfolio" image="" />
+	</head>
+	<body class="flex justify-center items-center w-full h-screen">
+		<main class="w-auto">
+			<section class="space-y-8 text-center font-sans">
+				<h1 class="text-5xl">Rajanan GANESALINGAM</h1>
+				<h2 class="text-4xl">Développer Full-Stack React/Node</h2>
+				<p class="flex items-center justify-center text-green-500">
+					<span
+						class="mr-1 bg-green-500 w-5 h-5 rounded-full border-2 flex justify-center items-center"
+					></span>Disponible
+				</p>
+				<div class="divide-x-2 border-gray-200 border-2"></div>
+				<div class="flex justify-around">
+					<a
+						href="mailto:rajan.g@outlook.fr"
+						class="bg-blue-500 p-5 w-48 rounded-xl transform hover:scale-125 hover:duration-300 hover:ease-in-out font-bold text-white"
+						>Contactez moi</a
+					>
+					<a
+						href="../../public/CV-2024.pdf"
+						download
+						target="_blank"
+						class="border-2 border-gray-400 rounded-xl text-gray-400 p-5 w-48 hover:text-white font-bold hover:border-blue-400 hover:bg-blue-300"
+						>Télécharger CV</a
+					>
+				</div>
+				<div class="divide-x-2 border-gray-200 border-2"></div>
+				<nav class="flex justify-between items-center">
+					<div class="space-x-12">
+						<a href="/projets" class="underline hover:text-blue-400">Projets</a>
+						<a href="/experiences" class="underline hover:text-blue-400">CV-détailé</a>
+					</div>
+					<div class="space-x-12 flex">
+						<a
+							target="_blank"
+							href={link_Github}
+							class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
+						>
+							<Fragment set:html={GithubLogo} />
+						</a>
+						<a
+							target="_blank"
+							href={link_LinkedIn}
+							class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
+						>
+							<Fragment set:html={LinkedInLogo} />
+						</a>
+					</div>
+				</nav>
+			</section>
+		</main>
+	</body>
+</html>
