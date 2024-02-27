@@ -11,7 +11,4 @@ export default defineConfig({
     include: ['**/react/*'],
     experimentalReactChildren: true,
   })],
-  redirects: {
-    '/': '/experiences'
-  }
 });
