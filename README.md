@@ -27,3 +27,6 @@ Voici l'architecture des dossiers de notre projet "Astro Portfolio" :
 ## Template
 
 Template utilisé pour faire le site pour la partie [experience](https://astro.build/themes/details/astro-portfolio/) et pour la partie [projets](https://astro.build/themes/details/astrofy/)
+[page d'accueil](https://super-solstice.vercel.app/)
+[page d'accueil](https://astro.build/themes/details/astro-identity/)
+[page d'accueil](https://www.andrealves.dev/)
