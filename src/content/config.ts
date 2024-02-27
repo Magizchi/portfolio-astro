@@ -10,10 +10,21 @@ const experienceSchema = z.object({
     hidden: z.boolean()
 });
 
+const projectSchema = z.object({
+    title: z.string(),
+    description: z.string(),
+    img: z.string(),
+    githubUrl: z.string(),
+    url: z.string()
+})
+
 export type ExperienceSchema = z.infer<typeof experienceSchema>;
+export type ProjectSchema = z.infer<typeof projectSchema>;
 
 const experienceCollection = defineCollection({ schema: experienceSchema })
+const projectCollection = defineCollection({ schema: projectSchema })
 
 export const collections = {
     'experience': experienceCollection,
+    'project': projectCollection
 }
