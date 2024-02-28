@@ -7,58 +7,64 @@ import LinkedInLogo from '../../public/linkedin-box-fill.svg?raw';
 
 <!DOCTYPE html>
 <meta charset="utf-8" />
-<html lang="fr">
+<html lang="fr" data-theme="default">
 	<head>
 		<BaseHead title="Rajanan.dev | Développer Full-Stack" description="Mon portfolio" image="" />
 	</head>
-	<body class="flex justify-center items-center w-full h-screen">
+	<body class="flex justify-center items-center w-full bg-contain bg-center bg-no-repeat">
 		<main class="w-auto">
-			<section class="space-y-8 text-center font-sans">
-				<h1 class="text-5xl">Rajanan GANESALINGAM</h1>
-				<h2 class="text-4xl">Développer Full-Stack React/Node</h2>
-				<a class="flex items-center justify-center text-green-500" href={link_LinkedIn}>
-					<span
-						class="mr-1 bg-green-500 w-5 h-5 rounded-full border-2 flex justify-center items-center"
-					></span>#OpenToWork
-				</a>
-				<div class="divide-x-2 border-gray-200 border-2"></div>
-				<div class="flex justify-around">
-					<a
-						href="mailto:rajan.g@outlook.fr"
-						class="bg-blue-500 p-5 w-48 rounded-xl transform hover:scale-125 hover:duration-300 hover:ease-in-out font-bold text-white"
-						>Contactez moi</a
-					>
-					<a
-						href="/cv-rajanan-ganesalingam-2024.pdf"
-						download
-						target="_blank"
-						class="border-2 border-gray-400 rounded-xl text-gray-400 p-5 w-48 hover:text-white font-bold hover:border-blue-400 hover:bg-blue-300"
-						>Télécharger CV</a
-					>
+			<section class="max-w-2xl mt-[25%] flex justify-center items-center">
+				<div class="space-y-8 font-sans border-2 rounded-3xl bg-opacity-60 bg-white p-5">
+					<h1 class="text-4xl">Bonjour, je suis Rajanan développer Full-Stack React/Node</h1>
+					<p class="">
+						Je suis un développeur full stack avec 4 ans d'expérience dans la création
+						d'applications web. Ma spécialisation en React.js, Node.js et les langages essentiels
+						tels que JavaScript, HTML et CSS
+					</p>
+					<a class="flex items-center justify-center text-green-500 underline" href={link_LinkedIn}>
+						<span
+							class="mr-1 bg-green-500 w-5 h-5 rounded-full border-2 flex justify-center items-center"
+						></span>#OpenToWork
+					</a>
+					<div class="divide-x-2 border-gray-200 border-2"></div>
+					<div class="flex justify-around">
+						<a
+							href="mailto:rajan.g@outlook.fr"
+							class="bg-blue-500 p-5 w-48 rounded-xl transform hover:scale-125 hover:duration-300 hover:ease-in-out font-bold text-white text-center"
+							>Contactez moi</a
+						>
+						<a
+							href="/cv-rajanan-ganesalingam-2024.pdf"
+							download
+							target="_blank"
+							class="border-2 border-gray-400 rounded-xl text-gray-400 p-5 w-48 hover:text-white font-bold hover:border-blue-400 hover:bg-blue-300 text-center"
+							>Télécharger CV</a
+						>
+					</div>
+					<div class="divide-x-2 border-gray-200 border-2"></div>
+					<nav class="flex justify-between items-center">
+						<div class="space-x-12">
+							<a href="/projets" class="underline hover:text-blue-400">Projets</a>
+							<a href="/experiences" class="underline hover:text-blue-400">À propos</a>
+						</div>
+						<div class="space-x-12 flex">
+							<a
+								target="_blank"
+								href={link_Github}
+								class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
+							>
+								<Fragment set:html={GithubLogo} />
+							</a>
+							<a
+								target="_blank"
+								href={link_LinkedIn}
+								class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
+							>
+								<Fragment set:html={LinkedInLogo} />
+							</a>
+						</div>
+					</nav>
 				</div>
-				<div class="divide-x-2 border-gray-200 border-2"></div>
-				<nav class="flex justify-between items-center">
-					<div class="space-x-12">
-						<a href="/projets" class="underline hover:text-blue-400">Projets</a>
-						<a href="/experiences" class="underline hover:text-blue-400">CV-détailé</a>
-					</div>
-					<div class="space-x-12 flex">
-						<a
-							target="_blank"
-							href={link_Github}
-							class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
-						>
-							<Fragment set:html={GithubLogo} />
-						</a>
-						<a
-							target="_blank"
-							href={link_LinkedIn}
-							class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
-						>
-							<Fragment set:html={LinkedInLogo} />
-						</a>
-					</div>
-				</nav>
 			</section>
 		</main>
 	</body>
