@@ -1,14 +1,66 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
-import Experience from '@components/astro/molecules/HorizontalCard/index.astro';
 import { SITE_DESCRIPTION_EXPERIENCE, SITE_TITLE_EXPERIENCE } from '@constants/consts.ts';
-import Hero from '@components/astro/molecules/Hero/index.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
-
+import XpLayout from '@layouts/XpLayout.astro';
+import dayjs from 'dayjs';
+import Badge from '@components/astro/atoms/Badge.astro';
 const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
+import { Icon } from 'astro-icon/components';
 ---
 
 <BaseLayout title={SITE_TITLE_EXPERIENCE} description={SITE_DESCRIPTION_EXPERIENCE}>
-	<Hero />
-	<Experience title="Experience" details={allExperience} />
+	<XpLayout
+		title="Éxperiences"
+		description="Voici un aperçu des lieux où j’ai travaillé, un simple résumé chronologique sans entrer dans les détails."
+	>
+		<table class="divide-y-2 py-5 flex flex-col items-center">
+			{
+				allExperience
+					.sort(function (a: any, b: any) {
+						return (
+							+dayjs(b.data.startDate, 'YYYY-MM') -
+							+dayjs(a.data.startDate, 'YYYY-MM')
+						);
+					})
+					.map(async (detail) => {
+						return (
+							!detail.data.hidden && (
+								<tr class="p-5 gap-5 hover:bg-stone-200 max-w-2xl flex justify-center border-b-2 flex-col md:flex-row">
+									<td class="md:w-2/6 w-full">
+										<h3 class="font-semibold hover:font-bold hover:scale-105 hover:underline">
+											<a href={`/experiences/${detail.slug}`}>
+												{detail.data.post}
+											</a>
+										</h3>
+										<p class="text-sm italic text-gray-700">
+											{detail.data.startDate} {detail.data.endDate ? '-' : ''}
+											{detail.data.endDate}
+										</p>
+									</td>
+									<td class="w-full md:w-3/6 ">
+										<p>{detail.data.company}</p>
+										<ul class="flex flex-row flex-wrap">
+											{detail.data.packages.map((item: unknown) => (
+												<li class="m-1">
+													<Badge>{item}</Badge>
+												</li>
+											))}
+										</ul>
+									</td>
+									<td class="w-full md:w-1/6 flex justify-end md:items-center">
+										<a href={`/experiences/${detail.slug}`}>
+											<Icon
+												name="arrow-right"
+												class="text-3xl hover:scale-110"
+											/>
+										</a>
+									</td>
+								</tr>
+							)
+						);
+					})
+			}
+		</table>
+	</XpLayout>
 </BaseLayout>
