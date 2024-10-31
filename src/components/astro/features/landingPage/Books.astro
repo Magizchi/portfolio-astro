@@ -6,7 +6,8 @@ const allBooks: CollectionEntry<'books'>[] = await getCollection('books');
 
 <div class="p-5 text-stone-900">
 	<h2 class="text-3xl w-full font-bold mb-4">Lectures</h2>
-	<ul class="space-y-5">
+	<p class="text-sm">J'aime aussi lire des livres, voici quelques-uns des livres que j'ai lus</p>
+	<ul class="space-y-5 mt-4">
 		{
 			allBooks.map((book) => (
 				<li class="flex flex-col">
