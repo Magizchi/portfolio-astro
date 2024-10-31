@@ -1,7 +1,7 @@
 ---
 company: 'OpenQuittance'
 startDate: 'Janv 2023'
-endDate: 'Juillet 2023'
+endDate: 'Juil 2023'
 companyLogo: ''
 post: 'Développeur Full-Stack'
 hidden: false

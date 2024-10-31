@@ -1,8 +1,8 @@
 ---
 title: Stage ALTYOR
 company: ALTYOR
-startDate: 2019-05
-endDate: 2019-10
+startDate: Mai 2019
+endDate: Oct 2019
 companyLogo: ''
 post: Développeur Full-Stack
 hidden: false
