@@ -5,33 +5,55 @@ startDate: 'Avr 2023'
 endDate: 'Nov 2023'
 companyLogo: ''
 post: 'Développeur Full-stack'
-number: 9
 hidden: false
+packages: ['AngularJS','TypeScript','Node.js','Nestjs','Nuxtjs','Posthog','Github']
 ---
-WEBNET
+### **Soliguide**
 
-**Mission 2**
+**Description du projet** : Soliguide rassemble tous les services, initiatives et ressources pour les personnes qui rencontrent une difficulté
 
- Projet de Mécénat Soliguide :  Une plateforme qui rassemble tous les services, initiatives et ressources pour les personnes qui rencontrent une difficulté  
+**Objectif du projet** : Développement d’une plateforme qui centralise les services, initiatives et ressources pour les personnes en difficulté.
 
-- Equipe : 4 Dev Full-Front, 2 Dev Back-end  
-- Mise en place des clés de traduction avec i18n et weblate  
-- Mise en place de posthog, qui permet d’avoir un suivi des données d’utilisation du site
-- Correction de bug
+#### **Équipe**
 
-***Environnement Technique*** : *Angular js, i18n, Nodejs, Posthog, Github, Typecript*
+- 4 développeurs Front-end, 2 développeurs Back-end
 
-<br/>
+#### **Actions réalisées**
 
-**Mission 1**
+- Intégration des clés de traduction avec **i18n** et **Weblate** pour la gestion multilingue
+- Intégration des clés de **Posthog** pour le suivi de l'utilisation et des statistiques du site
+- Correction des bugs identifiés
 
-- Equipe : 1 Dev Full-Stack
-- Création des pages pour créer les ordres de virements (Vuejs )
-- Sauvegarde des ordres de virements dans la base de données (GraphQl, TypeOrm)
-- Afficher les ODV en pdf sur la page web (Puppeteer )
-- Créer puis sauvegarder les fichiers PDF et XML sur le serveur (Nestjs)
-- Création de scripts qui permettent de récupérer/sauvegarder les données de la base principale
-- Une image contenant texte, Graphique, Police, graphisme
-- Description générée automatiquement
+#### **Environnement Technique**
 
-***Environnement Technique*** : *Vuejs, NuxtJs, Nestjs, PostgreSQL, Docker, GraphQL, TypeORM, puppeteer, gtihub*
+- **Front-end** : AngularJS, TypeScript
+- **Back-end** : Node.js
+- **Outils** : i18n, Weblate, Posthog, GitHub
+
+&nbsp;
+
+---
+
+### **Starinvest**
+
+**Description du projet** : STAR INVEST est spécialisé dans la structuration et la distribution de projets d’investissement Outre-Mer avec levier fiscal
+
+**Objectif du projet** : Développement d’une plateforme permettant de créer et sauvegarder les ordres de virements
+
+#### **Équipe**
+
+- 1 développeur Full-Stack
+
+#### **Actions réalisées**
+
+- Création des pages de gestion des ordres de virements avec **Vue.js**
+- Sauvegarde des ordres de virements dans une base de données via **GraphQL** et **TypeORM**
+- Génération et affichage des ordres de virements (ODV) en PDF via **Puppeteer**
+- Création et sauvegarde de fichiers PDF et XML sur le serveur avec **NestJS**
+- Développement de scripts pour la synchronisation des données entre bases
+
+#### **Environnement Technique**
+
+- **Front-end** : Vue.js, Nuxt.js
+- **Back-end** : NestJS, PostgreSQL
+- **Outils** : GraphQL, TypeORM, Docker, Puppeteer, GitHub
