@@ -27,6 +27,12 @@
       ],
       "@constants/*": [
         "constants/*"
+      ],
+      "@public/*":[
+        "../public/*"
+      ],
+      "@content/*":[
+        "content/*"
       ]
     },
     "jsx": "react-jsx",
