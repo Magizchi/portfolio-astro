@@ -6,8 +6,8 @@ const experienceSchema = z.object({
     post: z.string(),
     startDate: z.string(),
     endDate: z.string(),
-    number: z.number(),
-    hidden: z.boolean()
+    hidden: z.boolean(),
+    packages: z.string().array()
 });
 
 const projectSchema = z.object({
@@ -16,15 +16,24 @@ const projectSchema = z.object({
     img: z.string(),
     githubUrl: z.string(),
     url: z.string()
-})
+});
+
+const bookSchema = z.object({
+    slug: z.string(),
+    title: z.string(),
+    author: z.string(),
+    readYear: z.string(),
+});
 
 export type ExperienceSchema = z.infer<typeof experienceSchema>;
 export type ProjectSchema = z.infer<typeof projectSchema>;
+export type BookSchema = z.infer<typeof bookSchema>;
 
-const experienceCollection = defineCollection({ schema: experienceSchema })
-const projectCollection = defineCollection({ schema: projectSchema })
-
+const experienceCollection = defineCollection({ schema: experienceSchema });
+const projectCollection = defineCollection({ schema: projectSchema });
+const bookCollection = defineCollection({ schema: bookSchema });
 export const collections = {
     'experience': experienceCollection,
-    'project': projectCollection
-}
+    'project': projectCollection,
+    'book': bookCollection
+};
