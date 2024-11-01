@@ -16,9 +16,11 @@ const nav = [
 ];
 ---
 
-<header class="w-full text-gray-700 bg-white shadow-sm body-font">
+<header
+	class="w-full text-stone-900 bg-transparent border-b border-stone-300 shadow-sm body-font mb-5"
+>
 	<div class="container flex justify-between p-6 mx-auto">
-		<h1 class="mb-2 font-bold md:mb-0"><a href="/">Rajanan.dev</a></h1>
+		<h1 class="mb-2 font-bold md:mb-0 text-darkBlue"><a href="/">Rajanan.dev</a></h1>
 		<nav class="flex text-base md:ml-auto">
 			{nav.map((item) => <Link {...item} />)}
 		</nav>

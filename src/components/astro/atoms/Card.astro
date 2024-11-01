@@ -1,0 +1,7 @@
+---
+const { colSpan, rowSpan } = Astro.props;
+---
+
+<div class={`rounded-xl border ${colSpan} shadow-md  border-stone-300`}>
+	<slot />
+</div>

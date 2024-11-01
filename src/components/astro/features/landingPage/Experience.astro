@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import dayjs from 'dayjs';
+
+const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
+---
+
+<div class="text-stone-900 p-5">
+	<h2 class="text-3xl w-full font-bold mb-4">Mes experiences</h2>
+	<ul class="space-y-5">
+		{
+			allExperience
+				.sort(function (a: any, b: any) {
+					return (
+						+dayjs(b.data.startDate, 'YYYY-MM') - +dayjs(a.data.startDate, 'YYYY-MM')
+					);
+				})
+				.map((xp) => (
+					<li class="flex flex-col w-full space-y-1">
+						<span class="font-semibold">{xp.data.post}</span>
+						<span class="text-stone-900 text-sm flex justify-between w-full">
+							{xp.data.company}
+							<span class="italic text-lightBlue-500">
+								{xp.data.startDate} {xp.data.endDate ? `- ${xp.data.endDate}` : ''}
+							</span>
+						</span>
+					</li>
+				))
+		}
+		<li><a href="/experiences" class="text-blue-500 underline">Voir plus.</a></li>
+	</ul>
+</div>

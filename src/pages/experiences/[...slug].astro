@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import XpLayout from '@layouts/XpLayout.astro';
+
+export const getStaticPaths = (async () => {
+	const experience: CollectionEntry<'experience'>[] = await getCollection('experience');
+
+	return experience.map((post: any) => ({
+		params: { slug: post.slug },
+		props: post
+	}));
+}) satisfies GetStaticPaths;
+
+const { Content } = await Astro.props.render();
+const t = Astro.props;
+console.log('t', t);
+---
+
+<style is:global>
+	h2 {
+		margin-bottom: 20px !important;
+		font-weight: bolder !important;
+		font-size: larger !important;
+	}
+	h3 {
+		font-weight: bold !important;
+		font-size: medium !important;
+	}
+	p {
+		margin-bottom: 15px !important;
+	}
+	li {
+		list-style-type: disc !important;
+		list-style-position: inside;
+	}
+</style>
+<BaseLayout>
+	<XpLayout title={t.data.post}>
+		<Content />
+	</XpLayout>
+</BaseLayout>

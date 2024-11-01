@@ -1,84 +1,29 @@
 ---
-import { link_Github, link_LinkedIn } from '@constants/consts';
-import BaseHead from '@components/astro/BaseHead.astro';
-import GithubLogo from '../../public/github-fill.svg?raw';
-import LinkedInLogo from '../../public/linkedin-box-fill.svg?raw';
+import Hero from '@components/astro/features/landingPage/Hero.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Card from '@components/astro/atoms/Card.astro';
+import About from '@components/astro/features/landingPage/About.astro';
+import Project from '@components/astro/features/landingPage/Project.astro';
+import Books from '@components/astro/features/landingPage/Books.astro';
+import Experience from '@components/astro/features/landingPage/Experience.astro';
 ---
 
-<!DOCTYPE html>
-<meta charset="utf-8" />
-<html lang="fr">
-	<head>
-		<BaseHead
-			title="Rajanan.dev | Développer Full-Stack"
-			description="Mon portfolio"
-			image=""
-		/>
-	</head>
-	<body>
-		<main class="flex justify-center items-center h-screen">
-			<section class="md:max-w-2xl">
-				<div
-					class="space-y-8 font-sans md:border-2 rounded-3xl bg-opacity-60 !!bg-white p-5"
-				>
-					<h1 class="text-2xl md:text-4xl">
-						Bonjour, je suis Rajanan, développeur Full-Stack React/Node.js
-					</h1>
-					<p class="text-sm md:text-base">
-						Je suis un développeur full stack avec 4 ans d'expérience dans la création
-						d'applications web, et notamment des applications en React/Node
-					</p>
-					<a
-						class="flex items-center justify-center text-green-500 underline"
-						href={link_LinkedIn}
-					>
-						<span
-							class="mr-1 bg-green-500 w-5 h-5 rounded-full border-2 flex justify-center items-center"
-						></span>#OpenToWork
-					</a>
-					<div class="divide-x-2 border-gray-200 border-2"></div>
-					<div
-						class="flex items-center space-y-3 md:space-y-0 md:justify-around flex-col md:flex-row"
-					>
-						<a
-							href="mailto:rajan.g@outlook.fr"
-							class="bg-blue-500 p-5 w-48 rounded-xl transform hover:scale-125 hover:duration-300 hover:ease-in-out font-bold text-white text-center"
-							>Contactez moi</a
-						>
-						<a
-							href="/cv-rajanan-ganesalingam-2024.pdf"
-							download
-							target="_blank"
-							class="border-2 border-gray-400 rounded-xl text-gray-400 p-5 w-48 hover:text-white font-bold hover:border-blue-400 hover:bg-blue-300 text-center"
-							>Télécharger CV</a
-						>
-					</div>
-					<div class="divide-x-2 border-gray-200 border-2"></div>
-					<nav class="flex justify-between items-center">
-						<div class="space-x-12">
-							<!-- <a href="/projets" class="underline hover:text-blue-400">Projets</a>
-							<a href="/experiences" class="underline hover:text-blue-400">À propos</a
-							> -->
-						</div>
-						<div class="space-x-12 flex">
-							<a
-								target="_blank"
-								href={link_Github}
-								class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
-							>
-								<Fragment set:html={GithubLogo} />
-							</a>
-							<a
-								target="_blank"
-								href={link_LinkedIn}
-								class="w-8 h-8 transform hover:text-gray-400 hover:scale-110"
-							>
-								<Fragment set:html={LinkedInLogo} />
-							</a>
-						</div>
-					</nav>
-				</div>
-			</section>
-		</main>
-	</body>
-</html>
+<BaseLayout>
+	<section class="grid grid-cols-12 gap-3">
+		<Card colSpan="col-span-9">
+			<Hero />
+		</Card>
+		<Card colSpan="col-span-3">
+			<About />
+		</Card>
+		<Card colSpan="col-span-5">
+			<Project />
+		</Card>
+		<Card colSpan="col-span-4">
+			<Experience />
+		</Card>
+		<Card colSpan="col-span-3">
+			<Books />
+		</Card>
+	</section>
+</BaseLayout>

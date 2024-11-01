@@ -1,0 +1,11 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import ProjectCard from '@components/astro/molecules/ProjectCard/index.astro';
+
+const allProjects: CollectionEntry<'project'>[] = await getCollection('project');
+---
+
+<div class="space-y-3 px-3 text-stone-900 p-5">
+	<h2 class="text-3xl w-full font-bold mb-4">Projets</h2>
+	{allProjects.map((item) => <ProjectCard {...item.data} />)}
+</div>
