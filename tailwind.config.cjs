@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily:{
       hind:['hind'],
-      jetBrians:['jetBrians']
+      sora:['sora']
     }
   },
   plugins: [
