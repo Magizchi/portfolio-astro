@@ -16,27 +16,8 @@ export const getStaticPaths = (async () => {
 
 const { Content } = await Astro.props.render();
 const t = Astro.props;
-console.log('t', t);
 ---
 
-<style is:global>
-	h2 {
-		margin-bottom: 20px !important;
-		font-weight: bolder !important;
-		font-size: larger !important;
-	}
-	h3 {
-		font-weight: bold !important;
-		font-size: medium !important;
-	}
-	p {
-		margin-bottom: 15px !important;
-	}
-	li {
-		list-style-type: disc !important;
-		list-style-position: inside;
-	}
-</style>
 <BaseLayout>
 	<XpLayout title={t.data.post}>
 		<Content />
