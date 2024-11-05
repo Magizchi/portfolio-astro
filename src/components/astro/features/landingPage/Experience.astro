@@ -18,9 +18,11 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 				})
 				.map((xp) => (
 					<li class="flex flex-col w-full space-y-1">
-						<span class="font-semibold">{xp.data.post}</span>
+						<a href={`/experiences/${xp.slug}`}>
+							<span class="font-semibold hover:underline">{xp.data.company}</span>
+						</a>
 						<span class="text-stone-900 text-sm flex justify-between w-full">
-							{xp.data.company}
+							{xp.data.post}
 							<span class="italic text-lightBlue-500">
 								{xp.data.startDate} {xp.data.endDate ? `- ${xp.data.endDate}` : ''}
 							</span>
@@ -28,6 +30,6 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 					</li>
 				))
 		}
-		<li><a href="/experiences" class="text-blue-500 underline">Voir plus.</a></li>
+		<li><a href="/experiences" class="text-blue-500 underline">Voir plus</a></li>
 	</ul>
 </div>
