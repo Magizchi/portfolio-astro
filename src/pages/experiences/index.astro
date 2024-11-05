@@ -14,7 +14,7 @@ import { Icon } from 'astro-icon/components';
 		title="Éxperiences"
 		description="Voici un aperçu des lieux où j’ai travaillé, un simple résumé chronologique sans entrer dans les détails."
 	>
-		<table class="divide-y-2 py-5 flex flex-col items-center">
+		<div class="divide-y-2 py-5 flex flex-col items-center">
 			{
 				allExperience
 					.sort(function (a: any, b: any) {
@@ -26,41 +26,40 @@ import { Icon } from 'astro-icon/components';
 					.map(async (detail) => {
 						return (
 							!detail.data.hidden && (
-								<tr class="p-5 gap-5 hover:bg-stone-200 max-w-2xl flex justify-center border-b-2 flex-col md:flex-row">
-									<td class="md:w-2/6 w-full">
-										<h3 class="font-semibold hover:font-bold hover:scale-105 hover:underline">
-											<a href={`/experiences/${detail.slug}`}>
-												{detail.data.post}
-											</a>
-										</h3>
-										<p class="text-sm italic text-gray-700">
-											{detail.data.startDate} {detail.data.endDate ? '-' : ''}
-											{detail.data.endDate}
-										</p>
-									</td>
-									<td class="w-full md:w-3/6 ">
-										<p>{detail.data.company}</p>
-										<ul class="flex flex-row flex-wrap">
-											{detail.data.packages.map((item: unknown) => (
-												<li class="m-1">
-													<Badge>{item}</Badge>
-												</li>
-											))}
-										</ul>
-									</td>
-									<td class="w-full md:w-1/6 flex justify-end md:items-center">
-										<a href={`/experiences/${detail.slug}`}>
-											<Icon
-												name="arrow-right"
-												class="text-3xl hover:scale-110"
-											/>
-										</a>
-									</td>
-								</tr>
+								<article class=" hover:bg-stone-200 w-7/12 p-5">
+									<a href={`/experiences/${detail.slug}`} class="w-full">
+										<div class="flex md:flex-row w-full">
+											<div class="w-2/6">
+												<h3 class="font-semibold">{detail.data.post}</h3>
+												<p class="text-sm italic text-gray-700">
+													{detail.data.startDate}{' '}
+													{detail.data.endDate ? '-' : ''}
+													{detail.data.endDate}
+												</p>
+											</div>
+											<div class="w-3/6">
+												<p>{detail.data.company}</p>
+												<ul class="flex flex-row flex-wrap">
+													{detail.data.packages.map((item: unknown) => (
+														<li class="m-1">
+															<Badge>{item}</Badge>
+														</li>
+													))}
+												</ul>
+											</div>
+											<div class="w-1/6 flex justify-end md:items-center">
+												<Icon
+													name="arrow-right"
+													class="text-3xl hover:scale-110"
+												/>
+											</div>
+										</div>
+									</a>
+								</article>
 							)
 						);
 					})
 			}
-		</table>
+		</div>
 	</XpLayout>
 </BaseLayout>
