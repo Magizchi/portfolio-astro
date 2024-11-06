@@ -6,6 +6,14 @@ const allProjects: CollectionEntry<'project'>[] = await getCollection('project')
 ---
 
 <div class="space-y-3 px-3 text-stone-900 p-5">
-	<h2 class="text-3xl w-full font-bold mb-4">Projets</h2>
-	{allProjects.map((item) => <ProjectCard {...item.data} />)}
+	<h2 class="text-3xl w-full font-bold mb- font-satoshi">Projets</h2>
+	<ul class="space-y-3">
+		{
+			allProjects.map((item) => (
+				<li>
+					<ProjectCard {...item.data} />{' '}
+				</li>
+			))
+		}
+	</ul>
 </div>

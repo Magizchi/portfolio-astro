@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "hind";
+  }
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../fonts/hind/Hind-Variable.ttf");
+  }
+
+@font-face {
+  font-family: "sora";
+  src: url("../fonts/sora/Sora-Variable.ttf");
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url("../fonts/satoshi/Satoshi-Variable.ttf");
+}
+
+

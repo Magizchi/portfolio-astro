@@ -9,7 +9,10 @@ hidden: false
 packages: ['React', 'Node.js', 'Express', 'Passport.js']
 ---
 
+
 ### ALTYOR
+
+![alt text](/experiences/altyor.png "Title")
 
 **Description du projet** : Plate-forme gestion de rendez-vous
 

@@ -1,9 +1,15 @@
-const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{astro, ts}"],
   theme: {
+    fontFamily:{
+      hind:['hind'],
+      sora:['sora'],
+      satoshi:['satoshi']
+    }
   },
-  plugins: [],
+  plugins: [
+      require('@tailwindcss/typography'),
+  ],
   darkMode:["class"],
 };
