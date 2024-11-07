@@ -1,12 +1,16 @@
 export const PROFILE = {
-    skills: [
-        'React',
-        'Svelte',
-        'Typescript',
-        'Astro',
-        'Node.js',
-        'Python',
-        'Docker',
-        'Nest.js',
-    ]
+    skills: {
+        frontEnd: {
+            label: 'Font-End',
+            list: ['HTML/CSS', 'React', 'Svelte', 'Astro', 'Vue', 'Angular']
+        },
+        backEnd: {
+            label: 'Back-End',
+            list: ['Node.js', 'Python', 'Nestjs', 'Nextjs']
+        },
+        tools: {
+            label: 'Tools',
+            list: ['Docker', 'Typescript', 'eslint']
+        },
+    }
 };
