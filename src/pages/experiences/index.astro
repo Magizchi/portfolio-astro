@@ -5,8 +5,9 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import XpLayout from '@layouts/XpLayout.astro';
 import dayjs from 'dayjs';
 import Badge from '@components/astro/atoms/Badge.astro';
-const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 import { Icon } from 'astro-icon/components';
+
+const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 ---
 
 <BaseLayout title={SITE_TITLE_EXPERIENCE} description={SITE_DESCRIPTION_EXPERIENCE}>
