@@ -1,52 +1,23 @@
----
-import { link_Github, link_LinkedIn } from '@constants/consts';
-import GithubLogo from '@public/github-fill.svg?raw';
-import LinkedInLogo from '@public/linkedin-box-fill.svg?raw';
----
+<div class="relative p-5 space-y-20 text-stone-900 h-full">
+	<div class="space-y-8">
+		<h1 class="text-2xl md:text-6xl font-satoshi font-bold">Bonjour, je suis Rajanan</h1>
+		<p class="text-xl md:text-3xl">
+			Développeur Full-Stack à l'aise aussi bien en Front-End qu'en Back-End.
+		</p>
+	</div>
 
-<div class="p-5 space-y-8 font-sans bg-opacity-60 text-stone-900">
-	<h1 class="text-2xl md:text-4xl text-darkBlue">Yo, Rajanan, Développeur Full-Stack</h1>
-	<p class="text-sm md:text-base text-darkBlue">
-		Je suis un développeur full stack avec 4 ans d'expérience dans la création d'applications
-		web, et notamment des applications en React/Node
-	</p>
-	<a class="flex items-center justify-center underline text-green-500" href={link_LinkedIn}>
-		<span
-			class="flex items-center justify-center w-5 h-5 mr-1 border-2 rounded-full bg-green-500"
-		></span>#OpenToWork
-	</a>
-	<div class="border-2 divide-x-2 border-darkBlue"></div>
 	<div class="flex flex-col items-center space-y-3 r md:space-y-0 md:justify-around md:flex-row">
 		<a
 			href="mailto:rajan.g@outlook.fr"
-			class="w-48 p-5 font-bold text-center text-white transform hover:scale-125 bg-blue-500 hover:duration-300 rounded-xl hover:ease-in-out"
+			class="w-48 p-5 font-bold text-center text-white transform hover:scale-125 react hover:duration-300 rounded-xl hover:ease-in-out"
 			>Contactez moi</a
 		>
 		<a
 			href="/cv-rajanan-ganesalingam-2024.pdf"
 			download
 			target="_blank"
-			class="w-48 p-5 font-bold text-center text-stone-500 border-2 border-stone-500 rounded-xl text-sky hover:bg-blue-300 hover:border-blue-500 hover:text-white"
+			class="w-48 p-5 font-bold text-center text-[#1f43a6] hover:react border-2 border-[#1f43a6] rounded-xl text-sky hover:bg-[#1f43a6] hover:ease-in hover:scale-125 hover:duration-300 hover:border-[react] hover:text-white"
 			>Télécharger CV</a
 		>
 	</div>
-	<div class="border-2 divide-x-2 border-darkBlue"></div>
-	<nav class="flex items-center justify-center text-stone-500">
-		<div class="flex space-x-12">
-			<a
-				target="_blank"
-				href={link_Github}
-				class="w-8 h-8 transform hover:text-stone-400 hover:scale-110"
-			>
-				<Fragment set:html={GithubLogo} />
-			</a>
-			<a
-				target="_blank"
-				href={link_LinkedIn}
-				class="w-8 h-8 transform hover:text-stone-400 hover:scale-110"
-			>
-				<Fragment set:html={LinkedInLogo} />
-			</a>
-		</div>
-	</nav>
 </div>
