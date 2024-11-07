@@ -6,23 +6,126 @@ import About from '@components/astro/features/landingPage/About.astro';
 import Project from '@components/astro/features/landingPage/Project.astro';
 import Books from '@components/astro/features/landingPage/Books.astro';
 import Experience from '@components/astro/features/landingPage/Experience.astro';
+import { Icon } from 'astro-icon/components';
+import { link_Github, link_LinkedIn } from '@constants/consts';
 ---
 
 <BaseLayout>
-	<section class="grid grid-cols-12 gap-3">
-		<Card colSpan="col-span-9">
+	<section class="grid grid-cols-9 grid-rows-4 gap-5">
+		<Card colSpan="col-span-6 row-span-4">
 			<Hero />
 		</Card>
-		<Card colSpan="col-span-3">
+		<Card colSpan="col-span-1 row-span-1 row-start-5">
+			<div
+				class="flex items-center justify-center h-full font-semibold text-center text-white xp rounded-xl p-2"
+			>
+				<span class="text-sm">
+					<span class="text-5xl">4</span>
+					 ans experiences
+				</span>
+			</div>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 row-start-5">
+			<div class="flex flex-col items-center justify-center h-full react rounded-xl py-1">
+				<Icon name="reactjs-fill" class="text-6xl text-white" />
+				<span class="font-semibold text-white">React</span>
+			</div>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 row-start-5">
+			<div class="flex flex-col items-center justify-center h-full rounded-xl node">
+				<Icon name="nodejs-fill" class="text-6xl text-white" />
+				<span class="font-semibold text-white">Node.js</span>
+			</div>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 row-start-5">
+			<div class="flex flex-col items-center justify-center h-full rounded-xl typescript">
+				<Icon
+					name="typescript-fill"
+					class="text-6xl transition-all duration-300 group-hover:text-white"
+				/>
+				<span class="font-semibold text-white">Typescript</span>
+			</div>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 row-start-5">
+			<div class="flex flex-col items-center justify-center h-full rounded-xl svelte">
+				<Icon name="svelte-fill" class="text-6xl text-white" />
+				<span class="font-semibold text-white">Svelte</span>
+			</div>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 row-start-5">
+			<div class="flex flex-col items-center justify-center h-full rounded-xl typescript">
+				<Icon name="tailwind-css-fill" class="text-6xl text-white" />
+				<span class="font-semibold text-white">TailwindCss</span>
+			</div>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 border-2 !border-[#1f43a6]">
+			<a
+				href={link_Github}
+				class="relative flex items-center justify-center h-full overflow-hidden group hover:cursor-pointer text-[#1f43a6]"
+			>
+				<div
+					class="absolute bottom-0 w-full h-0 transition-all duration-300 react rounded-lg group-hover:h-full -z-50"
+				>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<Icon
+						name="github-fill"
+						class="text-6xl transition-all duration-300 group-hover:text-white"
+					/>
+					<p
+						class="h-full font-semibold text-[#1f43a6] transition-all duration-300 group-hover:flex rounded-xl -z-50"
+					>
+						<span
+							class="flex items-center justify-center space-x-5 group-hover:text-white"
+						>
+							Github <Icon
+								name="arrow-right"
+								class="text-base transition-all duration-300"
+							/>
+						</span>
+					</p>
+				</div>
+			</a>
+		</Card>
+		<Card colSpan="col-span-1 row-span-1 border-2 !border-[#1f43a6]">
+			<a
+				href={link_LinkedIn}
+				class="relative flex items-center justify-center h-full overflow-hidden group hover:cursor-pointer text-[#1f43a6]"
+			>
+				<div
+					class="absolute bottom-0 w-full h-0 transition-all duration-300 react rounded-lg group-hover:h-full -z-50"
+				>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<Icon
+						name="linkedin-box-fill"
+						class="text-6xl transition-all duration-300 group-hover:text-white"
+					/>
+					<p
+						class="h-full font-semibold text-[#1f43a6] transition-all duration-300 group-hover:flex rounded-xl -z-50"
+					>
+						<span
+							class="flex items-center justify-center space-x-5 group-hover:text-white"
+						>
+							LinkedIn <Icon
+								name="arrow-right"
+								class="text-base transition-all duration-300"
+							/>
+						</span>
+					</p>
+				</div>
+			</a>
+		</Card>
+		<Card colSpan="col-span-2 row-span-4 row-start-2 col-start-7">
 			<About />
 		</Card>
-		<Card colSpan="col-span-5">
+		<Card colSpan="col-span-4 row-span-4">
 			<Project />
 		</Card>
-		<Card colSpan="col-span-4">
+		<Card colSpan="col-span-3 row-span-4 ">
 			<Experience />
 		</Card>
-		<Card colSpan="col-span-3">
+		<Card colSpan="col-span-2 row-span-2">
 			<Books />
 		</Card>
 	</section>
