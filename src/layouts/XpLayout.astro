@@ -2,7 +2,8 @@
 const { title, description } = Astro.props;
 ---
 
-<section class="flex flex-col px-3 md:p-0">
+<section class="relative flex flex-col px-3 md:p-0">
+	<div class="absolute top-0 left-0 bg-gray-100 opacity-80 h-full w-full rounded-xl -z-50"></div>
 	<div class="border-b-2 w-full flex flex-col items-center pb-4">
 		<h2 class="mt-5 font-bold text-xl">{title}</h2>
 		<p class="text-center">{description}</p>

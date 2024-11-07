@@ -17,7 +17,7 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 					);
 				})
 				.map((xp) => (
-					<li class="flex flex-col w-full space-y-1">
+					<li class="space-y-1">
 						<a href={`/experiences/${xp.slug}`}>
 							<span class="font-semibold hover:underline">{xp.data.company}</span>
 						</a>

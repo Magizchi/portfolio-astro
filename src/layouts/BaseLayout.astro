@@ -1,6 +1,5 @@
 ---
 import BaseHead from '@components/astro/BaseHead.astro';
-import Header from '@components/astro/Header.astro';
 import Footer from '@components/astro/Footer.astro';
 const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 ---
@@ -11,9 +10,10 @@ const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
-	<body class="bg-stone-100">
-		<Header />
-		<main class="container mx-auto px-4 max-w-6xl">
+	<body class="relative">
+		<div class="absolute bg-[url(/torrix50.svg)] h-full w-full -z-50"></div>
+		<div class="absolute bg-gray-50 opacity-90 h-full w-full -z-50"></div>
+		<main class="mx-auto container max-w-6xl pt-10">
 			<slot />
 		</main>
 		<Footer />

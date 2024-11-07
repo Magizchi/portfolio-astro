@@ -5,8 +5,9 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import XpLayout from '@layouts/XpLayout.astro';
 import dayjs from 'dayjs';
 import Badge from '@components/astro/atoms/Badge.astro';
-const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 import { Icon } from 'astro-icon/components';
+
+const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 ---
 
 <BaseLayout title={SITE_TITLE_EXPERIENCE} description={SITE_DESCRIPTION_EXPERIENCE}>
@@ -26,7 +27,7 @@ import { Icon } from 'astro-icon/components';
 					.map(async (detail) => {
 						return (
 							!detail.data.hidden && (
-								<article class=" hover:bg-stone-200 w-7/12 p-5">
+								<article class=" hover:bg-gray-200 w-7/12 p-5">
 									<a href={`/experiences/${detail.slug}`} class="w-full">
 										<div class="flex md:flex-row w-full">
 											<div class="w-2/6">
