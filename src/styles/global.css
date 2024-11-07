@@ -24,6 +24,9 @@
 }
 
 
+.xp{
+  background-image: linear-gradient(to right bottom, #f8c24a, #f5b73b, #f3ac2c, #f0a01a, #ee9400);
+}
 
 .react {
   background-image: linear-gradient(
