@@ -24,3 +24,36 @@
 }
 
 
+
+.react {
+  background-image: linear-gradient(
+    to right bottom,
+    #0f74cf,
+    #1068c5,
+    #145cbb,
+    #1a4fb1,
+    #1f43a6
+  );
+}
+.svelte {
+  background-image: linear-gradient(
+    to right bottom,
+    #fb9371,
+    #fe8159,
+    #ff6e41,
+    #ff5826,
+    #ff3e00
+  );
+}
+.node {
+  background-image: linear-gradient(
+    to right bottom,
+    #97dc81,
+    #86ce6f,
+    #76c15e,
+    #65b34c,
+    #54a63a
+  );
+}
+.typescript {
+  background-image: linear-gradient(to bottom, #47aef4, #47acef, #48a9ea, #48a7e6, #49a4e1);}
