@@ -11,7 +11,7 @@ const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 		<BaseHead title={title} description={description} image={image} />
 	</head>
 	<body class="relative">
-		<main class="mx-auto container max-w-6xl pt-10">
+		<main class="container mx-auto max-w-6xl pt-10">
 			<slot />
 		</main>
 		<Footer />
