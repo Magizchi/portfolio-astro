@@ -6,9 +6,9 @@ import dayjs from 'dayjs';
 const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 ---
 
-<div class="text-stone-900 p-5">
-	<h2 class="text-3xl w-full font-bold mb-4 font-satoshi">Mes experiences</h2>
-	<ul class="space-y-5">
+<div class="mx-8 text-stone-900">
+	<h2 class="my-8 font-satoshi text-3xl font-bold">Mes experiences</h2>
+	<ul class="gap mb-3 flex flex-col gap-5">
 		{
 			allExperience
 				.sort(function (a: any, b: any) {
@@ -21,15 +21,15 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 						<a href={`/experiences/${xp.slug}`}>
 							<span class="font-semibold hover:underline">{xp.data.company}</span>
 						</a>
-						<span class="text-stone-900 text-sm flex justify-between w-full">
+						<span class="flex w-full justify-between text-sm text-stone-900">
 							{xp.data.post}
-							<span class="italic text-lightBlue-500">
+							<span class="text-lightBlue-500 italic">
 								{xp.data.startDate} {xp.data.endDate ? `- ${xp.data.endDate}` : ''}
 							</span>
 						</span>
 					</li>
 				))
 		}
-		<li><a href="/experiences" class="text-blue-500 underline">Voir plus</a></li>
+		<li><a href="/experiences" class="text-blue-500 underline">Plus d'info</a></li>
 	</ul>
 </div>

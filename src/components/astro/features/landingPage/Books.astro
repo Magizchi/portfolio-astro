@@ -4,15 +4,19 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 const allBooks: CollectionEntry<'books'>[] = await getCollection('books');
 ---
 
-<div class="p-5 text-stone-900">
-	<h2 class="text-3xl w-full font-bold mb-4 font-satoshi">Lectures</h2>
-	<p class="text-sm">J'aime aussi lire des livres, voici quelques-uns des livres que j'ai lus</p>
-	<ul class="space-y-5 mt-4">
+<div class="mx-8 text-stone-900">
+	<div class="my-8">
+		<h2 class="mb-2 font-satoshi text-3xl font-bold">Lectures</h2>
+		<p class="text-sm">
+			J'aime aussi lire des livres, voici quelques-uns des livres que j'ai lus
+		</p>
+	</div>
+	<ul class="gap mb-3 flex flex-col gap-5">
 		{
 			allBooks.map((book) => (
 				<li class="flex flex-col">
 					{book.data.title}{' '}
-					<span class="text-sm italic text-stone-700 font-thin">{book.data.author}</span>
+					<span class="text-sm font-thin italic text-stone-700">{book.data.author}</span>
 				</li>
 			))
 		}
