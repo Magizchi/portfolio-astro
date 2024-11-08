@@ -1,23 +1,31 @@
-<div class="p-12 flex flex-col gap gap-12 text-stone-900 h-full bg-white">
-	<div class="flex flex-col gap gap-5">
-		<h1 class="text-2xl md:text-6xl font-satoshi font-black">Bonjour, je suis Rajanan</h1>
+<div class="gap flex h-full flex-col gap-12 bg-white p-12 text-stone-900">
+	<div class="gap flex flex-col gap-5">
+		<h1 class="font-satoshi text-2xl font-black md:text-6xl">Bonjour, je suis Rajanan</h1>
 		<p class="text-xl md:text-3xl">
 			Développeur Full-Stack à l'aise aussi bien en Front-End qu'en Back-End.
 		</p>
 	</div>
-
-	<div class="flex flex-row items-start justify-start gap gap-5">
+	<div class="gap flex flex-row items-start justify-start gap-5">
 		<a
 			href="mailto:rajan.g@outlook.fr"
-			class="w-48 p-5 font-bold mainButton text-center text-white transform react hover:duration-300 rounded-xl hover:ease-in-out"
+			class="mainButton react w-48 transform rounded-xl p-5 text-center font-bold text-white hover:duration-300 hover:ease-in-out"
 			>Contactez moi</a
 		>
 		<a
 			href="/cv-rajanan-ganesalingam-2024.pdf"
 			download
 			target="_blank"
-			class="w-48 p-5 font-bold text-center text-[#1f43a6] border-2 border-[#1f43a6] rounded-xl text-sky radient-blue hover:ease-linear hover:duration-300 hover:border-[react] hover:text-white"
-			>Télécharger CV</a
+			class="group relative flex h-full w-48 cursor-pointer items-center justify-center overflow-hidden rounded-xl border-2 border-[#1f43a6] text-[#1f43a6]"
 		>
+			<div
+				class="react absolute bottom-0 h-0 w-full transition-all duration-300 group-hover:h-full"
+			>
+			</div>
+			<label
+				class="z-50 flex cursor-pointer rounded-xl font-semibold text-[#1f43a6] transition-all duration-300 group-hover:text-white"
+			>
+				Télécharger CV
+			</label>
+		</a>
 	</div>
 </div>
