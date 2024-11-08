@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 ---
 
 <div
-	class="rounded-lg group group-hover:shadow-xl hover:bg-stone-200 bg-with transition ease-in-out"
+	class="bg-with group rounded-lg transition ease-in-out hover:bg-gray-200 group-hover:shadow-xl"
 >
 	<div class="flex">
 		{
@@ -15,18 +15,18 @@ import { Image } from 'astro:assets';
 					height={1}
 					format="webp"
 					alt={title}
-					class="max-w-full md:max-w-[13rem] rounded-lg mr-2 hidden md:block"
+					class="mr-2 hidden max-w-full rounded-lg md:block md:max-w-[13rem]"
 				/>
 			)
 		}
-		<div class="grow w-full m-2 flex flex-col justify-between">
+		<div class="m-2 flex w-full grow flex-col justify-between">
 			<div>
 				<h1 class="text-xl font-bold">
 					<a href={url} target="_blank" class="text-blue-500 group-hover:underline">
 						{title}
 					</a>
 				</h1>
-				<p class="py-1 text-1xl">{description}</p>
+				<p class="text-1xl py-1">{description}</p>
 			</div>
 			<a href={githubUrl} target="_blank" class="text-blue-500 underline">Code source</a>
 		</div>
