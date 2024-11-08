@@ -9,7 +9,7 @@ export const PROFILE = {
             list: ['Node.js', 'Python', 'Nestjs', 'Nextjs']
         },
         tools: {
-            label: 'Tools',
+            label: 'Outils',
             list: ['Docker', 'Typescript', 'eslint']
         },
     }
