@@ -3,79 +3,68 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "hind";
-  }
+	html {
+		font-family: 'hind';
+	}
 }
 
 @font-face {
-    font-family: "hind";
-    src: url("../fonts/hind/Hind-Variable.ttf");
-  }
-
-@font-face {
-  font-family: "sora";
-  src: url("../fonts/sora/Sora-Variable.ttf");
+	font-family: 'hind';
+	src: url('../fonts/hind/Hind-Variable.ttf');
 }
 
 @font-face {
-  font-family: "satoshi";
-  src: url("../fonts/satoshi/Satoshi-Variable.ttf");
+	font-family: 'sora';
+	src: url('../fonts/sora/Sora-Variable.ttf');
+}
+
+@font-face {
+	font-family: 'satoshi';
+	src: url('../fonts/satoshi/Satoshi-Variable.ttf');
 }
 
 body {
-  background: linear-gradient(0deg, rgba(249, 250, 251, 0.8), rgba(249, 250, 251, 0.8)), url('/public/coordonnees/final2.svg');
-  width: 100%;
-  height: 100%;
+	background: linear-gradient(0deg, rgba(249, 250, 251, 0.8), rgba(249, 250, 251, 0.8)),
+		url('/coordonnees/final2.svg');
+	width: 100%;
+	height: 100%;
 }
 
 .mainButton:hover {
-  background-image: linear-gradient(to right bottom, #5b80e5, #b671d1, #e867a9, #fb707d, #f38856, #ec8d45, #e39433, #d69b1f, #e08b00, #ea7700, #f56000, #ff3e00);}
+	background-image: linear-gradient(
+		to right bottom,
+		#5b80e5,
+		#b671d1,
+		#e867a9,
+		#fb707d,
+		#f38856,
+		#ec8d45,
+		#e39433,
+		#d69b1f,
+		#e08b00,
+		#ea7700,
+		#f56000,
+		#ff3e00
+	);
+}
 
- .xp{
-  background-image: linear-gradient(to right bottom, #f8c24a, #f5b73b, #f3ac2c, #f0a01a, #ee9400);
+.xp {
+	background-image: linear-gradient(to right bottom, #f8c24a, #f5b73b, #f3ac2c, #f0a01a, #ee9400);
 }
 
 .radient-blue:hover {
-  background-image: linear-gradient(
-    to right bottom,
-    #0f74cf,
-    #1068c5,
-    #145cbb,
-    #1a4fb1,
-    #1f43a6
-  );
+	background-image: linear-gradient(to right bottom, #0f74cf, #1068c5, #145cbb, #1a4fb1, #1f43a6);
 }
 
 .react {
-  background-image: linear-gradient(
-    to right bottom,
-    #0f74cf,
-    #1068c5,
-    #145cbb,
-    #1a4fb1,
-    #1f43a6
-  );
+	background-image: linear-gradient(to right bottom, #0f74cf, #1068c5, #145cbb, #1a4fb1, #1f43a6);
 }
 .svelte {
-  background-image: linear-gradient(
-    to right bottom,
-    #fb9371,
-    #fe8159,
-    #ff6e41,
-    #ff5826,
-    #ff3e00
-  );
+	background-image: linear-gradient(to right bottom, #fb9371, #fe8159, #ff6e41, #ff5826, #ff3e00);
 }
 .node {
-  background-image: linear-gradient(
-    to right bottom,
-    #97dc81,
-    #86ce6f,
-    #76c15e,
-    #65b34c,
-    #54a63a
-  );
+	background-image: linear-gradient(to right bottom, #97dc81, #86ce6f, #76c15e, #65b34c, #54a63a);
 }
 .typescript {
-  background-image: linear-gradient(to bottom, #47aef4, #47acef, #48a9ea, #48a7e6, #49a4e1);}
+	background-image: linear-gradient(to bottom, #47aef4, #47acef, #48a9ea, #48a7e6, #49a4e1);
+}
