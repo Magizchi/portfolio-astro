@@ -4,26 +4,24 @@ import { PROFILE } from '@content/PROFILE';
 const skills = PROFILE.skills;
 ---
 
-<div class="text-stone-900 md:mx-5">
-	<h2 class="my-8 font-satoshi text-3xl font-bold">Compétences</h2>
-	<div class="gap flex flex-col gap-3">
-		<p>
-			<span class="font-semibold">
-				{skills.frontEnd.label}:
-			</span>
-			<span class="text-sm text-gray-600">{skills.frontEnd.list.join(', ')}</span>
-		</p>
-		<p>
-			<span class="font-semibold">
-				{skills.backEnd.label}:
-			</span>
-			<span class="text-sm text-gray-600">{skills.backEnd.list.join(', ')}</span>
-		</p>
-		<p>
-			<span class="font-semibold">
-				{skills.tools.label}:
-			</span>
-			<span class="text-sm text-gray-600">{skills.tools.list.join(', ')}</span>
-		</p>
-	</div>
+<h2 class="font-satoshi text-3xl font-bold text-black">Compétences</h2>
+<div class="gap flex flex-col gap-3">
+	<p>
+		<span class="font-semibold">
+			{skills.frontEnd.label}:
+		</span>
+		<span class="text-sm text-gray-600">{skills.frontEnd.list.join(', ')}</span>
+	</p>
+	<p>
+		<span class="font-semibold">
+			{skills.backEnd.label}:
+		</span>
+		<span class="text-sm text-gray-600">{skills.backEnd.list.join(', ')}</span>
+	</p>
+	<p>
+		<span class="font-semibold">
+			{skills.tools.label}:
+		</span>
+		<span class="text-sm text-gray-600">{skills.tools.list.join(', ')}</span>
+	</p>
 </div>
