@@ -6,8 +6,8 @@ import dayjs from 'dayjs';
 const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 ---
 
-<h2 class="mb-8 font-satoshi text-3xl font-bold text-stone-900">Mes experiences</h2>
-<ul class="gap mb-3 flex flex-col gap-5">
+<h2 class="mb-3 font-satoshi text-3xl font-bold text-stone-900">Mes experiences</h2>
+<ul class="gap mb-3 flex flex-col gap-3">
 	{
 		allExperience
 			.sort(function (a: any, b: any) {
