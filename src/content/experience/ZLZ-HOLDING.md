@@ -9,8 +9,6 @@ title: ZLZ Holding
 packages: ['React','TypeScript','Node.js','Python', 'Docker', 'Github']
 ---
 
-## ZLZ Holding
-
 ### **Medimatrix**
 
 **Description du projet** : Avoir une application **Web** et **Mobile** pour avoir un suivie des livraison effectué par les entrepôts

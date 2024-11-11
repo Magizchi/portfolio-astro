@@ -8,7 +8,6 @@ hidden: false
 title: 'OpenQuittance'
 packages: ['SvelteKit','Drizzle','Docker','EsLint', 'prettier', Github]
 ---
-### **Open Quittance**
 
 **Description du projet** : Simplification de la gestion des quittances de loyer à travers une plateforme open-source, permettant de générer facilement des quittances pour les propriétaires.
 
