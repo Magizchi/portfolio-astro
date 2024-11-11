@@ -2,10 +2,10 @@
 const { title, description } = Astro.props;
 ---
 
-<section class="flex justify-center bg-white/80 md:pb-5">
+<section class="flex justify-center bg-white/80 p-5">
 	<div class="gap flex flex-col gap-5">
-		<div class="mb-5 flex flex-col items-center border-b-2">
-			<h2 class="mt-5 text-xl font-bold">{title}</h2>
+		<div class="flex flex-col items-center border-b-2 p-5">
+			<h2 class="text-xl font-bold">{title}</h2>
 			<p class="text-center">{description}</p>
 		</div>
 		<slot />
