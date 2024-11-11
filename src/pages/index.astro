@@ -11,122 +11,124 @@ import { link_Github, link_LinkedIn } from '@constants/consts';
 ---
 
 <BaseLayout>
-	<section class="grid grid-cols-9 grid-rows-4 gap-5">
-		<Card colSpan="col-span-6 row-span-4">
+	<div
+		class="mx-3 grid grid-cols-4 grid-rows-5 gap-3 md:grid-cols-9 md:grid-rows-4 lg:mx-0 lg:gap-5"
+	>
+		<Card colSpan="col-span-4 row-start-2 md:row-start-1 md:col-span-9 lg:col-span-6 row-span-4">
 			<Hero />
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 row-start-5">
+		<Card colSpan="col-span-1 row-span-1 row-start-1 md:row-start-5 !p-0">
 			<div
-				class="flex items-center justify-center h-full font-semibold text-center text-white xp rounded-xl p-2"
+				class="xp flex h-full items-center justify-center rounded-xl text-center font-semibold text-white"
 			>
 				<span class="text-sm">
 					<span class="text-5xl">4</span>
-					 ans experiences
+					 ans expérience
 				</span>
 			</div>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 row-start-5">
-			<div class="flex flex-col items-center justify-center h-full react rounded-xl py-1">
-				<Icon name="reactjs-fill" class="text-6xl text-white" />
-				<span class="font-semibold text-white">React</span>
+		<Card colSpan="col-span-1 row-span-1 row-start-1 md:row-start-5 !p-0">
+			<div class="react flex h-full flex-col items-center justify-center rounded-xl py-1">
+				<Icon name="reactjs-fill" class="text-5xl text-white lg:text-6xl" />
+				<span class="text-sm font-semibold text-white lg:text-base">React</span>
 			</div>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 row-start-5">
-			<div class="flex flex-col items-center justify-center h-full rounded-xl node">
-				<Icon name="nodejs-fill" class="text-6xl text-white" />
-				<span class="font-semibold text-white">Node.js</span>
+		<Card colSpan="col-span-1 row-span-1 row-start-1 md:row-start-5 !p-0">
+			<div class="node flex h-full flex-col items-center justify-center rounded-xl">
+				<Icon name="nodejs-fill" class="text-5xl text-white lg:text-6xl" />
+				<span class="text-sm font-semibold text-white lg:text-base">Node.js</span>
 			</div>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 row-start-5">
-			<div class="flex flex-col items-center justify-center h-full rounded-xl typescript">
+		<Card colSpan="col-span-1 row-span-1 row-start-1 md:row-start-5 !p-0">
+			<div class="typescript flex h-full flex-col items-center justify-center rounded-xl">
 				<Icon
 					name="typescript-fill"
-					class="text-6xl transition-all duration-300 group-hover:text-white"
+					class="text-5xl transition-all duration-300 group-hover:text-white lg:text-6xl"
 				/>
-				<span class="font-semibold text-white">Typescript</span>
+				<span class="text-sm font-semibold text-white lg:text-base">TypeScript</span>
 			</div>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 row-start-5">
-			<div class="flex flex-col items-center justify-center h-full rounded-xl svelte">
-				<Icon name="svelte-fill" class="text-6xl text-white" />
+		<Card colSpan="col-span-1 row-span-1 row-start-6 md:row-start-5 !p-0">
+			<div class="svelte flex h-full flex-col items-center justify-center rounded-xl">
+				<Icon name="svelte-fill" class="text-5xl text-white lg:text-6xl" />
 				<span class="font-semibold text-white">Svelte</span>
 			</div>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 row-start-5">
-			<div class="flex flex-col items-center justify-center h-full rounded-xl typescript">
-				<Icon name="tailwind-css-fill" class="text-6xl text-white" />
-				<span class="font-semibold text-white">TailwindCss</span>
+		<Card colSpan="col-span-1 row-span-1 row-start-6 md:row-start-5 !p-0">
+			<div class="typescript flex h-full flex-col items-center justify-center rounded-xl">
+				<Icon name="tailwind-css-fill" class="text-5xl text-white lg:text-6xl" />
+				<span class="text-sm font-semibold text-white lg:text-base">Tailwind</span>
 			</div>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 border-2 !border-[#1f43a6]">
+		<Card
+			colSpan="col-span-1 row-span-1 row-start-6 md:row-start-5 lg:row-start-1 border-2 !border-[#1f43a6] !p-0"
+		>
 			<a
 				href={link_Github}
-				class="relative flex items-center justify-center h-full overflow-hidden group hover:cursor-pointer text-[#1f43a6]"
+				class="group relative flex h-full items-center justify-center overflow-hidden rounded-lg text-[#1f43a6] hover:cursor-pointer"
 			>
 				<div
-					class="absolute bottom-0 w-full h-0 transition-all duration-300 react rounded-lg group-hover:h-full -z-50"
+					class="react absolute bottom-0 h-0 w-full transition-all duration-300 group-hover:h-full"
 				>
 				</div>
-				<div class="flex flex-col items-center justify-center">
+				<div class="z-10 flex flex-col items-center justify-center">
 					<Icon
 						name="github-fill"
 						class="text-6xl transition-all duration-300 group-hover:text-white"
 					/>
 					<p
-						class="h-full font-semibold text-[#1f43a6] transition-all duration-300 group-hover:flex rounded-xl -z-50"
+						class="-z-50 h-full rounded-xl font-semibold text-[#1f43a6] transition-all duration-300 group-hover:flex"
 					>
 						<span
-							class="flex items-center justify-center space-x-5 group-hover:text-white"
+							class="flex items-center justify-center space-x-5 text-sm group-hover:text-white md:text-base"
 						>
-							Github <Icon
-								name="arrow-right"
-								class="text-base transition-all duration-300"
-							/>
+							Github
 						</span>
 					</p>
 				</div>
 			</a>
 		</Card>
-		<Card colSpan="col-span-1 row-span-1 border-2 !border-[#1f43a6]">
+		<Card
+			colSpan="col-span-1 row-span-1 border-2 row-start-6 md:row-start-5  lg:row-start-1 !border-[#1f43a6] !p-0"
+		>
 			<a
 				href={link_LinkedIn}
-				class="relative flex items-center justify-center h-full overflow-hidden group hover:cursor-pointer text-[#1f43a6]"
+				class="group relative flex h-full items-center justify-center overflow-hidden rounded-lg text-[#1f43a6] hover:cursor-pointer"
 			>
 				<div
-					class="absolute bottom-0 w-full h-0 transition-all duration-300 react rounded-lg group-hover:h-full -z-50"
+					class="react absolute bottom-0 h-0 w-full transition-all duration-300 group-hover:h-full"
 				>
 				</div>
-				<div class="flex flex-col items-center justify-center">
+				<div class="z-10 flex flex-col items-center justify-center">
 					<Icon
 						name="linkedin-box-fill"
 						class="text-6xl transition-all duration-300 group-hover:text-white"
 					/>
 					<p
-						class="h-full font-semibold text-[#1f43a6] transition-all duration-300 group-hover:flex rounded-xl -z-50"
+						class="-z-50 h-full text-sm font-semibold text-[#1f43a6] transition-all duration-300 group-hover:flex md:text-base"
 					>
-						<span
-							class="flex items-center justify-center space-x-5 group-hover:text-white"
-						>
-							LinkedIn <Icon
-								name="arrow-right"
-								class="text-base transition-all duration-300"
-							/>
+						<span class="flex items-center justify-center space-x-5 group-hover:text-white">
+							LinkedIn
 						</span>
 					</p>
 				</div>
 			</a>
 		</Card>
-		<Card colSpan="col-span-2 row-span-4 row-start-2 col-start-7">
+		<Card
+			colSpan="col-span-4 row-span-2 row-start-8 md:row-span-1 lg:row-span-3 md:row-start-6 lg:row-start-2 lg:col-start-7"
+		>
 			<About />
 		</Card>
-		<Card colSpan="col-span-4 row-span-4">
+		<Card colSpan="col-span-4 row-span-4 md:row-span-3 lg:row-span-4 lg:col-start-1 lg:row-start-6">
 			<Project />
 		</Card>
-		<Card colSpan="col-span-3 row-span-4 ">
+		<Card colSpan="col-span-4 md:col-span-5 lg:col-span-3 row-span-4 md:col-start-5 md:row-start-6">
 			<Experience />
 		</Card>
-		<Card colSpan="col-span-2 row-span-2">
+		<Card
+			colSpan="lg:col-start-8 lg:col-span-2 lg:row-span-2 lg:row-start-6 md:col-span-3 col-span-4"
+		>
 			<Books />
 		</Card>
-	</section>
+	</div>
 </BaseLayout>

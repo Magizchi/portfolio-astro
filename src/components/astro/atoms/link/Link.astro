@@ -1,6 +1,6 @@
 ---
 const { title, href } = Astro.props;
-const underline = Astro.url.pathname === href;
+const underline = Astro.url.pathname.includes(href);
 ---
 
 <a href={href} class=`mr-5 font-medium hover:text-gray-900 ${underline ? 'underline' : ''}`>

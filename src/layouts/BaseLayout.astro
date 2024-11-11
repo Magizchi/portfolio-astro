@@ -11,9 +11,7 @@ const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 		<BaseHead title={title} description={description} image={image} />
 	</head>
 	<body class="relative">
-		<div class="absolute bg-[url(/torrix50.svg)] h-full w-full -z-50"></div>
-		<div class="absolute bg-gray-50 opacity-90 h-full w-full -z-50"></div>
-		<main class="mx-auto container max-w-6xl pt-10">
+		<main class="container mx-auto max-w-6xl pt-10">
 			<slot />
 		</main>
 		<Footer />

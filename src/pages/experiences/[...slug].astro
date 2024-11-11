@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import BaseLayout from '@layouts/BaseLayout.astro';
+import MainLayout from '@layouts/MainLayout.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import XpLayout from '@layouts/XpLayout.astro';
@@ -18,12 +18,12 @@ const { Content } = await Astro.props.render();
 const t = Astro.props;
 ---
 
-<BaseLayout>
-	<XpLayout title={t.data.post}>
+<MainLayout>
+	<XpLayout title={t.data.company}>
 		<div class="flex justify-center">
 			<div class="prose">
 				<Content />
 			</div>
 		</div>
 	</XpLayout>
-</BaseLayout>
+</MainLayout>

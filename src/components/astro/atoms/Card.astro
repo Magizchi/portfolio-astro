@@ -2,7 +2,8 @@
 const { colSpan, rowSpan } = Astro.props;
 ---
 
-<div class={`relative rounded-xl border ${colSpan} shadow-md  border-[#e8d5b5]`}>
-	<div class="absolute top-0 left-0 bg-gray-100 opacity-50 h-full w-full rounded-xl -z-50"></div>
+<section
+	class={`rounded-xl border ${colSpan} shadow-md  border-[#e8d5b5] bg-white moverflow-hidden p-10`}
+>
 	<slot />
-</div>
+</section>
