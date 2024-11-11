@@ -15,61 +15,43 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 		title="Éxperiences"
 		description="Voici un aperçu des lieux où j’ai travaillé, un simple résumé chronologique sans entrer dans les détails."
 	>
-		<table class="flex flex-col items-center divide-y-2 bg-red-300">
+		<div class="flex flex-col divide-y-2">
 			{
 				allExperience
 					.sort(function (a: any, b: any) {
-						return (
-							+dayjs(b.data.startDate, 'YYYY-MM') -
-							+dayjs(a.data.startDate, 'YYYY-MM')
-						);
+						return +dayjs(b.data.startDate, 'YYYY-MM') - +dayjs(a.data.startDate, 'YYYY-MM');
 					})
 					.map(async (detail) => {
 						return (
 							!detail.data.hidden && (
-								<tr>
-									<a
-										href={`/experiences/${detail.slug}`}
-										class="p-5 hover:bg-gray-200"
-									>
-										<article class="w-full">
-											<div class="flex w-full md:flex-row">
-												<div class="w-2/6">
-													<h3 class="font-semibold">
-														{detail.data.company}
-													</h3>
-													<p class="text-sm italic text-gray-700">
-														{detail.data.startDate}{' '}
-														{detail.data.endDate ? '-' : ''}
-														{detail.data.endDate}
-													</p>
-												</div>
-												<div class="w-3/6">
-													<p>{detail.data.post}</p>
-													<ul class="flex flex-row flex-wrap">
-														{detail.data.packages.map(
-															(item: unknown) => (
-																<li class="m-1">
-																	<Badge>{item}</Badge>
-																</li>
-															)
-														)}
-													</ul>
-												</div>
-												<div class="flex w-1/6 justify-end md:items-center">
-													<Icon
-														name="arrow-right"
-														class="text-3xl hover:scale-110"
-													/>
-												</div>
-											</div>
-										</article>
-									</a>
-								</tr>
+								<a href={`/experiences/${detail.slug}`} class="p-8 hover:bg-gray-200">
+									<article class="gap flex flex-col justify-between gap-3 md:flex-row">
+										<div class="md:min-w-40">
+											<h3 class="font-semibold">{detail.data.company}</h3>
+											<p class="text-sm italic text-gray-700">
+												{detail.data.startDate} {detail.data.endDate ? '-' : ''}
+												{detail.data.endDate}
+											</p>
+										</div>
+										<div class="md:w-full">
+											<p>{detail.data.post}</p>
+											<ul class="flex flex-row flex-wrap">
+												{detail.data.packages.map((item: unknown) => (
+													<li class="m-1">
+														<Badge>{item}</Badge>
+													</li>
+												))}
+											</ul>
+										</div>
+										<div class="flex justify-end md:items-center">
+											<Icon name="arrow-right" class="text-3xl hover:scale-110" />
+										</div>
+									</article>
+								</a>
 							)
 						);
 					})
 			}
-		</table>
+		</div>
 	</XpLayout>
 </MainLayout>
