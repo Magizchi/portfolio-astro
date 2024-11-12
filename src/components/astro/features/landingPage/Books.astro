@@ -4,11 +4,11 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 const allBooks: CollectionEntry<'books'>[] = await getCollection('books');
 ---
 
-<div class="mb-8">
-	<h2 class="mb-2 font-satoshi text-3xl font-bold text-black">Lectures</h2>
+<div class="mb-6">
+	<h2 class="mb-3 font-satoshi text-3xl font-bold text-black">Lectures</h2>
 	<p class="text-sm">J'aime aussi lire des livres, voici quelques-uns des livres que j'ai lus</p>
 </div>
-<ul class="gap mb-3 flex flex-col gap-5">
+<ul class="gap mb-3 flex flex-col gap-3">
 	{
 		allBooks.map((book) => (
 			<li class="flex flex-col">

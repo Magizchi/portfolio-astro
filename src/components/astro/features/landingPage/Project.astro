@@ -5,8 +5,8 @@ import ProjectCard from '@components/astro/molecules/ProjectCard/index.astro';
 const allProjects: CollectionEntry<'project'>[] = await getCollection('project');
 ---
 
-<h2 class="mb-8 font-satoshi text-3xl font-bold text-black">Projets</h2>
-<ul class="gap flex flex-col gap-5">
+<h2 class="mb-3 font-satoshi text-3xl font-bold text-black">Projets</h2>
+<ul class="gap flex flex-col gap-3">
 	{
 		allProjects.map((item) => (
 			<li>
