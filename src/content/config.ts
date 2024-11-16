@@ -15,7 +15,8 @@ const projectSchema = z.object({
     description: z.string(),
     img: z.string(),
     githubUrl: z.string(),
-    url: z.string()
+    url: z.string(),
+    hidden: z.boolean(),
 });
 
 const bookSchema = z.object({

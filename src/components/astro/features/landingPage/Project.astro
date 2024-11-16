@@ -8,10 +8,14 @@ const allProjects: CollectionEntry<'project'>[] = await getCollection('project')
 <h2 class="mb-3 font-satoshi text-3xl font-bold text-black">Projets</h2>
 <ul class="gap flex flex-col gap-3">
 	{
-		allProjects.map((item) => (
-			<li>
-				<ProjectCard {...item.data} />
-			</li>
-		))
+		allProjects.map((item) => {
+			if (!item.data.hidden) {
+				return (
+					<li>
+						<ProjectCard {...item.data} />
+					</li>
+				);
+			}
+		})
 	}
 </ul>
