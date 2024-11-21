@@ -16,6 +16,7 @@ const projectSchema = z.object({
     img: z.string(),
     githubUrl: z.string(),
     url: z.string(),
+    packages: z.string().array(),
     hidden: z.boolean(),
 });
 

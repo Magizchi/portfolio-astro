@@ -6,8 +6,9 @@ endDate: 'Nov 2023'
 companyLogo: ''
 post: 'Développeur Full-stack'
 hidden: false
-packages: ['AngularJS','TypeScript','Node.js','Nestjs','Nuxtjs','Posthog','Github']
+packages: ['React', 'TypeScript', 'Nestjs', 'Node.js', 'Nuxtjs', 'Posthog', 'Github']
 ---
+
 ### **Soliguide**
 
 **Description du projet** : Soliguide rassemble tous les services, initiatives et ressources pour les personnes qui rencontrent une difficulté

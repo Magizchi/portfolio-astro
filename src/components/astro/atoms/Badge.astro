@@ -1,1 +1,7 @@
-<div class="react rounded-full px-2 py-1 text-sm font-semibold text-white"><slot /></div>
+---
+const { className } = Astro.props;
+---
+
+<div class=`rounded-md bg-slate-200 px-2 py-1 text-sm font-semibold text-black ${className}`>
+	<slot />
+</div>
