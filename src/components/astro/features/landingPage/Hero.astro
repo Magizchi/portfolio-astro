@@ -1,31 +1,85 @@
-<div class="gap flex h-full flex-col gap-12 rounded-xl bg-white/80 p-2 text-black">
+---
+import { link_Github, link_LinkedIn } from '@constants/consts';
+import { Icon } from 'astro-icon/components';
+const techno = [
+	{
+		icon: 'reactjs-fill',
+		label: 'React',
+		class: 'react'
+	},
+	{
+		icon: 'typescript-line',
+		label: 'TypeScript',
+		class: 'typescript'
+	},
+	{
+		icon: 'svelte-fill',
+		label: 'Svelte',
+		class: 'svelte'
+	},
+	{
+		icon: 'nodejs-fill',
+		label: 'Node.js',
+		class: 'node'
+	},
+	{
+		icon: 'tailwind-css-fill',
+		label: 'Tailwind',
+		class: 'typescript'
+	}
+];
+---
+
+<div class="gap relative flex h-full flex-col gap-12 rounded-xl p-2 text-black">
 	<div class="gap flex flex-col gap-5">
-		<h1 class="font-satoshi text-2xl font-black md:text-6xl">Bonjour, je suis Rajanan</h1>
-		<p class="text-xl md:text-3xl">
-			Développeur Full-Stack à l'aise aussi bien en Front-End qu'en Back-End.
-		</p>
+		<h1 class="font-satoshi text-2xl font-black md:text-5xl">
+			Bonjour, je suis <span class="text-orange-600">Rajanan</span>
+		</h1>
+		<ul class="gap flex flex-col gap-4">
+			<li class="flex items-center">
+				<Icon name="map-pin-2-fill" class="mr-2 text-xl" />Paris, FRANCE
+			</li>
+			<li class="flex items-center">
+				<Icon name="code-box-fill" class="mr-2 text-xl" /> Je suis développeur Full-Stack avec 5 ans
+				d'expériences.
+			</li>
+			<li>
+				<ul class="gap flex flex-row gap-5">
+					{
+						techno.map((item) => (
+							<li class="flex items-center justify-between text-black">
+								<div class="flex items-center justify-center">
+									<Icon name={item.icon} class="mr-1 text-2xl font-normal" />
+								</div>
+								<div class="flex min-w-10 items-center">{item.label}</div>
+							</li>
+						))
+					}
+				</ul>
+			</li>
+		</ul>
 	</div>
-	<div class="gap flex flex-col items-start gap-5 md:flex-row md:justify-start">
+	<div class="gap flex flex-col items-start gap-5">
 		<a
 			href="mailto:rajan.g@outlook.fr"
-			class="mainButton react w-48 transform rounded-xl p-5 text-center font-bold text-white hover:duration-300 hover:ease-in-out"
+			class="flex items-center rounded-lg border-2 border-blue-600 px-3 py-1 text-blue-600 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
 			>Contactez moi</a
 		>
-		<a
-			href="/cv-rajanan-ganesalingam-2024.pdf"
-			download
-			target="_blank"
-			class="group relative flex h-full w-48 cursor-pointer items-center justify-center overflow-hidden rounded-xl border-2 border-[#1f43a6] text-[#1f43a6]"
-		>
-			<div
-				class="react absolute bottom-0 h-0 w-full transition-all duration-300 group-hover:h-full"
+		<div class="gap flex items-center justify-between gap-3">
+			<a
+				href="/cv-rajanan-ganesalingam-2024.pdf"
+				download
+				target="_blank"
+				class="flex items-center rounded-lg text-black underline hover:border-gray-600 hover:bg-gray-200"
 			>
-			</div>
-			<label
-				class="z-50 flex cursor-pointer rounded-xl font-semibold text-[#1f43a6] transition-all duration-300 group-hover:text-white"
-			>
-				Télécharger CV
-			</label>
-		</a>
+				<Icon name="file-download-fill" class="mr-2 text-inherit" />Télécharger CV
+			</a>
+			<a href={link_Github} target="_blank" class="hover text-xl hover:text-gray-500">
+				<Icon name="github-fill" />
+			</a>
+			<a href={link_LinkedIn} target="_blank" class="hover text-xl hover:text-gray-500">
+				<Icon name="linkedin-fill" />
+			</a>
+		</div>
 	</div>
 </div>
