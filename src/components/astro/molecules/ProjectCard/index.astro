@@ -1,10 +1,12 @@
 ---
-const { title, img, description, githubUrl, url } = Astro.props;
+import Badge from '@components/astro/atoms/Badge.astro';
 import { Image } from 'astro:assets';
+
+const { title, img, description, githubUrl, url, packages } = Astro.props;
 ---
 
 <div
-	class="bg-with group rounded-lg transition ease-in-out hover:bg-gray-200 group-hover:shadow-xl"
+	class="bg-with group rounded-lg transition ease-in-out hover:bg-slate-100 group-hover:shadow-xl"
 >
 	<div class="flex">
 		{
@@ -20,15 +22,26 @@ import { Image } from 'astro:assets';
 			)
 		}
 		<div class="m-2 flex w-full grow flex-col justify-between">
-			<div>
+			<div class="gap flex flex-col gap-1">
 				<h1 class="text-xl font-bold">
 					<a href={url} target="_blank" class="text-blue-500 group-hover:underline">
 						{title}
 					</a>
 				</h1>
-				<p class="text-1xl py-1">{description}</p>
+				<p class="py-1 text-sm">{description}</p>
+				<p class="py-1">
+					<ul class="gap flex flex-row gap-3">
+						{
+							packages.map((item: string) => (
+								<li>
+									<Badge>{item}</Badge>
+								</li>
+							))
+						}
+					</ul>
+				</p>
 			</div>
-			<a href={githubUrl} target="_blank" class="text-blue-500 underline">Code source</a>
+			<a href={githubUrl} target="_blank" class="text-sm text-blue-500 underline">Code source</a>
 		</div>
 	</div>
 </div>
