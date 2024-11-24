@@ -8,18 +8,24 @@ import Experience from '@components/astro/features/landingPage/Experience.astro'
 ---
 
 <BaseLayout>
-	<div class="mx-3 grid grid-cols-4 gap-3 md:grid-cols-7 md:grid-rows-5 lg:mx-0 lg:gap-5">
-		<Card colSpan="col-start-1 col-span-4 md:col-span-4 row-span-2 !p-10">
+	<article class="flex flex-col gap-16 p-16">
+		<section class="relative flex max-w-3xl items-center">
+			<div
+				class="mainSection absolute -left-44 -top-[360px] -z-40 h-[880px] w-[880px] rounded-full"
+			>
+			</div>
 			<Hero />
-		</Card>
-		<Card colSpan="col-span-4 md:col-span-5 lg:col-span-3 row-span-3">
+		</section>
+		<section class="rounded-2xl bg-[#14213D] px-6 py-4">
 			<Experience />
+		</section>
+		<!-- <Card colSpan="col-span-4 md:col-span-5 lg:col-span-3 row-span-3">
 		</Card>
 		<Card colSpan="col-span-4 row-span-3 md:row-span-3 lg:row-span-3">
 			<Project />
 		</Card>
 		<Card colSpan="col-span-2 row-span-3">
 			<Books />
-		</Card>
-	</div>
+		</Card> -->
+	</article>
 </BaseLayout>
