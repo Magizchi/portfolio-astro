@@ -4,9 +4,9 @@ startDate: 'Janv 2024'
 endDate: 'Juil 2024'
 companyLogo: ''
 post: 'Développeur Full-Stack'
-hidden: false
+hidden: true
 title: 'OpenQuittance'
-packages: ['SvelteKit','Drizzle','Docker','EsLint', 'prettier', Github]
+packages: ['SvelteKit', 'Drizzle', 'Docker', 'EsLint', 'prettier', Github]
 ---
 
 **Description du projet** : Simplification de la gestion des quittances de loyer à travers une plateforme open-source, permettant de générer facilement des quittances pour les propriétaires.
