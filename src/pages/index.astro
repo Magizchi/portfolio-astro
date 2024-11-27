@@ -5,25 +5,34 @@ import Card from '@components/astro/atoms/Card.astro';
 import Project from '@components/astro/features/landingPage/Project.astro';
 import Books from '@components/astro/features/landingPage/Books.astro';
 import Experience from '@components/astro/features/landingPage/Experience.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <BaseLayout>
-	<article class="flex flex-col gap-16 p-16">
-		<section class="relative flex max-w-3xl items-center">
-			<div
-				class="mainSection absolute -left-44 -top-[360px] -z-40 h-[880px] w-[880px] rounded-full"
-			>
+	<article class="flex flex-col gap-14 p-5 lg:max-w-3xl lg:gap-16 lg:p-16">
+		<section class="relative flex items-center">
+			<div class="mainSection absolute -left-32 -top-56 -z-40 h-[880px] w-[880px] rounded-full">
 			</div>
 			<Hero />
 		</section>
-		<section class="rounded-2xl bg-[#14213D] px-6 py-4">
+		<section class="relative rounded-2xl bg-[#14213D] px-12 py-8">
+			<div class="absolute -left-10">
+				<Icon name="supp" class="absolute -rotate-90 text-4xl text-orange-500" />
+				<Icon name="inf" class="absolute -rotate-90 text-4xl text-orange-500" />
+				<Icon name="chevron-sides" class="absolute -rotate-90 text-4xl" />
+			</div>
 			<Experience />
 		</section>
-		<!-- <Card colSpan="col-span-4 md:col-span-5 lg:col-span-3 row-span-3">
-		</Card>
-		<Card colSpan="col-span-4 row-span-3 md:row-span-3 lg:row-span-3">
+		<section class="relative rounded-2xl bg-[#14213D] px-12 py-8">
+			<div class="absolute -left-10">
+				<Icon name="supp" class="absolute -rotate-90 text-4xl text-orange-500" />
+				<Icon name="inf" class="absolute -rotate-90 text-4xl text-orange-500" />
+				<Icon name="chevron-sides" class="absolute -rotate-90 text-4xl" />
+			</div>
 			<Project />
-		</Card>
+		</section>
+		<!-- 
+	
 		<Card colSpan="col-span-2 row-span-3">
 			<Books />
 		</Card> -->
