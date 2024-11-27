@@ -10,7 +10,7 @@ const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
-	<body class="relative mx-auto flex min-h-screen max-w-3xl flex-col px-8">
+	<body class="relative mx-auto flex min-h-screen flex-col lg:max-w-3xl">
 		<div class="symbols"></div>
 		<main class="grow">
 			<slot />
