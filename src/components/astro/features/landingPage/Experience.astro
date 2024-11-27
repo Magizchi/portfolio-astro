@@ -8,42 +8,45 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 
 <div class="flex items-center justify-between">
 	<h2 class="mb-3 font-satoshi text-2xl font-bold text-white">Éxperiences</h2>
-	<a href="/experiences" class="text-xs text-white underline">Voir plus.</a>
+	<a href="/experiences" class="font-hind text-xs text-white underline">Voir plus.</a>
 </div>
-<ul class="gap flex flex-col gap-8">
+<ul class="gap flex flex-col gap-8 font-hind">
 	{
 		allExperience
 			.sort(function (a: any, b: any) {
 				return +dayjs(b.data.startDate, 'YYYY-MM') - +dayjs(a.data.startDate, 'YYYY-MM');
 			})
 			.slice(0, 3)
-			.map((xp) => (
-				<li>
-					<a href={`/experiences/${xp.slug}`} class="flex flex-col">
-						<div class="gap flex flex-col gap-1">
-							<div class="gap flex flex-col gap-0">
-								<span class="text-xs text-[#BDD6F2]">
-									{xp.data.startDate} {xp.data.endDate ? `- ${xp.data.endDate}` : ''}
-								</span>
-								<span class="font-bold text-white">{xp.data.company}</span>
-							</div>
-							<div class="gap flex flex-col gap-0">
-								<span class="text-[#BDD6F2]">{xp.data.post}</span>
-								<span class="text-white">
-									Développement d'une application web pour générer des quittances de loyer pour les
-									propriétaires
-								</span>
-							</div>
-							<ul class="gap flex gap-2">
-								{xp.data.packages.slice(0, 3).map((item) => (
-									<li>
-										<Badge>{item}</Badge>
-									</li>
-								))}
-							</ul>
-						</div>
-					</a>
-				</li>
-			))
+			.map(
+				(xp) =>
+					!xp.data.hidden && (
+						<li>
+							<a href={`/experiences/${xp.slug}`} class="flex flex-col">
+								<div class="gap flex flex-col gap-2">
+									<div class="gap flex flex-col gap-0">
+										<span class="text-xs text-[#BDD6F2]">
+											{xp.data.startDate} {xp.data.endDate ? `- ${xp.data.endDate}` : ''}
+										</span>
+										<span class="font-bold text-white">{xp.data.company}</span>
+									</div>
+									<div class="gap flex flex-col gap-0">
+										<span class="text-[#BDD6F2]">{xp.data.post}</span>
+										<span class="text-white">
+											Développement d'une application web pour générer des quittances de loyer pour
+											les propriétaires
+										</span>
+									</div>
+									<ul class="gap flex gap-2">
+										{xp.data.packages.slice(0, 3).map((item) => (
+											<li>
+												<Badge>{item}</Badge>
+											</li>
+										))}
+									</ul>
+								</div>
+							</a>
+						</li>
+					)
+			)
 	}
 </ul>
