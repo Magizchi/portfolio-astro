@@ -30,54 +30,58 @@ const techno = [
 ];
 ---
 
-<div class="gap relative flex h-full flex-col gap-12 rounded-xl p-2 text-black">
-	<div class="gap flex flex-col gap-5">
-		<h1 class="font-satoshi text-2xl font-black md:text-5xl">
-			Bonjour, je suis <span class="text-orange-600">Rajanan</span>
-		</h1>
-		<ul class="gap flex flex-col gap-4">
-			<li class="flex items-center">
-				<Icon name="map-pin-2-fill" class="mr-2 text-xl" />Paris, FRANCE
-			</li>
-			<li class="flex items-center">
-				<Icon name="code-box-fill" class="mr-2 text-xl" /> Je suis développeur Full-Stack avec 5 ans
-				d'expériences.
-			</li>
-			<li>
-				<ul class="gap flex flex-row gap-5">
-					{
-						techno.map((item) => (
-							<li class="flex items-center justify-between text-black">
-								<div class="flex items-center justify-center">
-									<Icon name={item.icon} class="mr-1 text-2xl font-normal" />
-								</div>
-								<div class="flex min-w-10 items-center">{item.label}</div>
-							</li>
-						))
-					}
-				</ul>
-			</li>
+<div class="gap z-50 flex h-full flex-col gap-12">
+	<div class="gap flex flex-col gap-8">
+		<div class="flex flex-col gap-4">
+			<div class="gap flex flex-col gap-2">
+				<h1 class="font-satoshi text-2xl font-bold text-white lg:text-3xl">
+					Bonjour, je suis <span class="text-[#FF6F3C]">Rajanan</span>
+				</h1>
+				<p class="flex items-start font-hind text-white lg:items-center">
+					<span class="m-1">
+						<Icon name="earth-line" class="" />
+					</span>
+					<span> Paris, France, Terre, 3ème planète du Système solaire</span>
+				</p>
+			</div>
+			<p class="text-wrap text-left font-hind text-white">
+				Je suis développeur Full-Stack avec 5 ans d'expérience. J’aime l’exploration, que ce soit
+				avec la science-fiction, les jeux vidéos ou les mangas.
+			</p>
+		</div>
+		<ul class="gap flex flex-row gap-5 text-white">
+			{
+				techno.map((item) => (
+					<li class="flex flex-col items-center">
+						<div class="flex items-center justify-center">
+							<Icon name={item.icon} class="text-3xl font-normal" />
+						</div>
+						<div class="flex min-w-10 items-center font-hind">{item.label}</div>
+					</li>
+				))
+			}
 		</ul>
 	</div>
-	<div class="gap flex flex-col items-start gap-5">
+	<div class="gap flex flex-col items-center gap-8 sm:flex-row">
 		<a
 			href="mailto:rajan.g@outlook.fr"
-			class="flex items-center rounded-lg border-2 border-blue-600 px-3 py-1 text-blue-600 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
+			class="flex items-center rounded-lg bg-white px-6 py-3 font-hind font-bold text-[#0b192c] hover:border-[#FF6F3C] hover:bg-[#FF6F3C] hover:text-[#0b192c]"
 			>Contactez moi</a
 		>
-		<div class="gap flex items-center justify-between gap-3">
+		<div class="gap flex flex-row gap-12">
 			<a
 				href="/cv-rajanan-ganesalingam-2024.pdf"
 				download
 				target="_blank"
-				class="flex items-center rounded-lg text-black underline hover:border-gray-600 hover:bg-gray-200"
+				class="flex items-center text-white underline decoration-2 underline-offset-4"
 			>
-				<Icon name="file-download-fill" class="mr-2 text-inherit" />Télécharger CV
+				<Icon name="file-pdf-2-fill" class="mr-1 font-hind text-2xl font-semibold text-white" />Mon
+				CV
 			</a>
-			<a href={link_Github} target="_blank" class="hover text-xl hover:text-gray-500">
+			<a href={link_Github} target="_blank" class="text-2xl text-white hover:text-gray-500">
 				<Icon name="github-fill" />
 			</a>
-			<a href={link_LinkedIn} target="_blank" class="hover text-xl hover:text-gray-500">
+			<a href={link_LinkedIn} target="_blank" class="text-2xl text-white hover:text-gray-500">
 				<Icon name="linkedin-fill" />
 			</a>
 		</div>
