@@ -9,7 +9,7 @@ const allProjects: CollectionEntry<'project'>[] = await getCollection('project')
 	<h2 class="mb-3 font-satoshi text-3xl font-bold text-white">Projets</h2>
 	<a href="/projets" class="text-xs text-white underline">Voir plus</a>
 </div>
-<ul class="gap flex flex-col gap-3">
+<ul class="gap flex flex-row-reverse gap-3">
 	{
 		allProjects.map((item) => {
 			if (!item.data.hidden) {
