@@ -24,8 +24,8 @@
 }
 
 body {
+	background: url('/symbols.svg');
 	background-color: #0b192c;
-	background-image: url('/symbols.svg');
 }
 
 .mainSection {
@@ -91,21 +91,20 @@ body {
 }
 
 @keyframes chevron-supp {
-	0%{
-	  transform: translateY(-8px);
-		color: #4F2203
-
+	0% {
+		transform: translateY(-8px);
+		color: #4f2203;
 	}
 	100% {
-	  transform: translateY(0);
-	  color: #f97316;
+		transform: translateY(0);
+		color: #f97316;
 	}
-  }
+}
 
 @keyframes chevron-inf {
 	0% {
 		transform: translateY(8px);
-		color: #4F2203
+		color: #4f2203;
 	}
 	100% {
 		transform: translateY(0);
