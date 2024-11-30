@@ -75,3 +75,40 @@ body {
 .typescript {
 	background-image: linear-gradient(to bottom, #47aef4, #47acef, #48a9ea, #48a7e6, #49a4e1);
 }
+
+.chevron {
+	position: absolute;
+	rotate: -90deg;
+	color: #f97316;
+}
+
+.chevron-supp-animation {
+	animation: 1s ease-out 0s 1 chevron-supp;
+}
+
+.chevron-inf-animation {
+	animation: 1s ease-out 0s 1 chevron-inf;
+}
+
+@keyframes chevron-supp {
+	0%{
+	  transform: translateY(-8px);
+		color: #4F2203
+
+	}
+	100% {
+	  transform: translateY(0);
+	  color: #f97316;
+	}
+  }
+
+@keyframes chevron-inf {
+	0% {
+		transform: translateY(8px);
+		color: #4F2203
+	}
+	100% {
+		transform: translateY(0);
+		color: #f97316;
+	}
+}

@@ -9,30 +9,27 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <BaseLayout>
-	<article class="flex flex-col gap-14 p-5 lg:max-w-3xl lg:gap-16 lg:p-16">
-		<section class="relative flex items-center">
-			<div class="mainSection absolute -left-32 -top-56 -z-40 h-[880px] w-[880px] rounded-full">
-			</div>
-			<Hero />
-		</section>
-		<section class="relative rounded-2xl bg-[#14213D] px-12 py-8">
-			<div class="absolute -left-10">
-				<Icon name="supp" class="absolute -rotate-90 text-4xl text-orange-500" />
-				<Icon name="inf" class="absolute -rotate-90 text-4xl text-orange-500" />
-			</div>
-			<Experience />
-		</section>
-		<section class="relative rounded-2xl bg-[#14213D] px-12 py-8">
-			<div class="absolute -left-10">
-				<Icon name="supp" class="absolute -rotate-90 text-4xl text-orange-500" />
-				<Icon name="inf" class="absolute -rotate-90 text-4xl text-orange-500" />
-			</div>
-			<Project />
-		</section>
-		<!-- 
+	<section id="hero" class="relative flex items-center">
+		<div class="mainSection absolute -left-32 -top-56 -z-40 h-[880px] w-[880px] rounded-full"></div>
+		<Hero />
+	</section>
+	<section id="experiences" class="relative rounded-2xl bg-[#14213D] px-12 py-8">
+		<div class="absolute -left-10">
+			<Icon name="supp" class="chevron chevron-supp-animation text-4xl" />
+			<Icon name="inf" class="chevron chevron-inf-animation text-4xl" />
+		</div>
+		<Experience />
+	</section>
+	<section id="projects" class="relative rounded-2xl bg-[#14213D] px-12 py-8">
+		<div class="absolute -left-10">
+			<Icon name="supp" class="chevron chevron-supp-animation text-4xl" />
+			<Icon name="inf" class="chevron chevron-inf-animation text-4xl" />
+		</div>
+		<Project />
+	</section>
+	<!-- 
 	
 		<Card colSpan="col-span-2 row-span-3">
 			<Books />
 		</Card> -->
-	</article>
 </BaseLayout>

@@ -12,7 +12,7 @@ const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 	</head>
 	<body class="relative mx-auto flex min-h-screen flex-col lg:max-w-3xl">
 		<div class="symbols"></div>
-		<main class="grow">
+		<main class="flex flex-col gap-14 p-5 lg:max-w-3xl lg:gap-16 lg:p-16">
 			<slot />
 		</main>
 		<Footer />
