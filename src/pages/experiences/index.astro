@@ -24,11 +24,11 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 					.map(async (detail) => {
 						return (
 							!detail.data.hidden && (
-								<a href={`/experiences/${detail.slug}`} class="p-8 hover:bg-gray-200">
+								<a href={`/experiences/${detail.slug}`} class="p-8 hover:bg-[#14213D]">
 									<article class="gap flex flex-col justify-between gap-3 md:flex-row">
 										<div class="md:min-w-40">
 											<h3 class="font-semibold">{detail.data.company}</h3>
-											<p class="text-sm italic text-gray-700">
+											<p class="text-sm italic text-white">
 												{detail.data.startDate} {detail.data.endDate ? '-' : ''}
 												{detail.data.endDate}
 											</p>
