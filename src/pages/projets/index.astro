@@ -10,7 +10,7 @@ const allProjects: CollectionEntry<'project'>[] = await getCollection('project')
 
 <MainLayout title={SITE_TITLE_PROJECTS} description={SITE_PROJECTS_DESCRIPTION}>
 	<XpLayout title="Projets">
-		<ul class="gap flex flex-col gap-8">
+		<ul class="gap flex flex-row gap-8">
 			{
 				allProjects.map((item) => (
 					<li>
