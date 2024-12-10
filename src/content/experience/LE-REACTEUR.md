@@ -3,6 +3,7 @@ company: LE REACTEUR
 startDate: Mars 2019
 endDate: ''
 companyLogo: ''
+description: Développeur un MVP pour une start-up
 post: Développeur Full-Stack
 hidden: false
 title: LE REACTEUR

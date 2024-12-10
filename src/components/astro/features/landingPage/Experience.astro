@@ -35,10 +35,7 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 									</div>
 									<div class="gap flex flex-col gap-0">
 										<span class="text-[#BDD6F2]">{xp.data.post}</span>
-										<span class="text-white">
-											Développement d'une application web pour générer des quittances de loyer pour
-											les propriétaires
-										</span>
+										<span class="text-white">{xp.data.description}</span>
 									</div>
 									<ul class="gap flex gap-2">
 										{xp.data.packages.slice(0, 3).map((item) => (

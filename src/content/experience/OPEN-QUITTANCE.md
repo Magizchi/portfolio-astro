@@ -3,6 +3,7 @@ company: 'OpenQuittance'
 startDate: 'Janv 2024'
 endDate: 'Juil 2024'
 companyLogo: ''
+description: Développement d'une application web pour générer des quittances de loyer pour les propriétaires
 post: 'Développeur Full-Stack'
 hidden: true
 title: 'OpenQuittance'
