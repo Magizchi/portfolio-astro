@@ -7,7 +7,8 @@ const experienceSchema = z.object({
     startDate: z.string(),
     endDate: z.string(),
     hidden: z.boolean(),
-    packages: z.string().array()
+    packages: z.string().array(),
+    description: z.string()
 });
 
 const projectSchema = z.object({

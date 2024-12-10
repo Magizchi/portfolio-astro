@@ -3,6 +3,7 @@ company: Weblagence
 startDate: Nov 2019
 endDate: Dec 2019
 companyLogo: ''
+description: Migration de PHP à React
 post: Développeur Front-end
 hidden: false
 title: LE REACTEUR

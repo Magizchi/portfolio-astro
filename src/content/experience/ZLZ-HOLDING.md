@@ -2,11 +2,12 @@
 company: ZLZ Holding
 startDate: Sept 2020
 endDate: Janv 2023
+description: Développement de plusieurs applications web et mobiles pour la gestion des livraisons et des stocks des pharmacies.
 companyLogo: ''
 post: Développeur Full-stack
 hidden: false
 title: ZLZ Holding
-packages: ['React','TypeScript','Node.js','Python', 'Docker', 'Github']
+packages: ['React', 'TypeScript', 'Node.js', 'Python', 'Docker', 'Github']
 ---
 
 ### **Medimatrix**
@@ -19,18 +20,18 @@ Développement d’une nouvelle plateforme (web et mobile) permettant d’améli
 
 #### **Équipe**
 
-* 1 Lead Dev, 1 développeur Front-end React, 1 développeur Back-end Python(Flask)
+- 1 Lead Dev, 1 développeur Front-end React, 1 développeur Back-end Python(Flask)
 
 #### **Actions réalisées**
 
-* Conception du design des pages à réception d’un cahier des charges  
-* Développement de l’affichage web par appel d’API (Listes des documents/ listes colis/ feuille de routes, …) en **React**
-* Développement des points à livrer sur une carte (OpenStreetMap), avec la position du livreur par appel d’API en **React**  
-* Développement de la partie mobile pour les livreurs (Gestion du chargement des camions/ affichage des points livraison sur l'application mobile des livreurs) en React-Native  
-* Intégration continue avec **Github Actions**
-* Création des routes REST et des requêtes SQL pour l’envois et la sauvegarde des données  
+- Conception du design des pages à réception d’un cahier des charges
+- Développement de l’affichage web par appel d’API (Listes des documents/ listes colis/ feuille de routes, …) en **React**
+- Développement des points à livrer sur une carte (OpenStreetMap), avec la position du livreur par appel d’API en **React**
+- Développement de la partie mobile pour les livreurs (Gestion du chargement des camions/ affichage des points livraison sur l'application mobile des livreurs) en React-Native
+- Intégration continue avec **Github Actions**
+- Création des routes REST et des requêtes SQL pour l’envois et la sauvegarde des données
 
-***Environnement Technique*** : *React, Typescript, React-Native, GitHub, MariaDb, Flask (python), Docker*
+**_Environnement Technique_** : _React, Typescript, React-Native, GitHub, MariaDb, Flask (python), Docker_
 
 &nbsp;
 
@@ -46,19 +47,19 @@ Développement d’une nouvelle plateforme (web et mobile) permettant d’améli
 
 #### **Équipe**
 
-* 1 Lead Dev, 1 développeur Front-end React, 1 développeur Back-end Python(Flask)
+- 1 Lead Dev, 1 développeur Front-end React, 1 développeur Back-end Python(Flask)
 
 #### **Actions réalisées**
 
-* Conception du design des pages à réception d’un cahier des charges  
-* Développement de la partie Web et Mobile de la gestion de stock (inventaires, réceptions, entrées/ sorties) en **React** et **React-Native**  
-* Développement de la gestion des scans des produits depuis l'application mobile en **React-Native**  
-* Utilisation de AntDesign pour la conception des pages  
-* Développement de la gestion d’impression depuis l'application mobile et le Back Office  
-* Intégration continue avec **Github Actions**
-* Création des routes REST et des requêtes SQL pour l’envois et la sauvegarde des données  
+- Conception du design des pages à réception d’un cahier des charges
+- Développement de la partie Web et Mobile de la gestion de stock (inventaires, réceptions, entrées/ sorties) en **React** et **React-Native**
+- Développement de la gestion des scans des produits depuis l'application mobile en **React-Native**
+- Utilisation de AntDesign pour la conception des pages
+- Développement de la gestion d’impression depuis l'application mobile et le Back Office
+- Intégration continue avec **Github Actions**
+- Création des routes REST et des requêtes SQL pour l’envois et la sauvegarde des données
 
-***Environnement technique*** : *React, TypeScript, PDA, React-Native, GitHub, MariaDb, Flask (Python) Docker*
+**_Environnement technique_** : _React, TypeScript, PDA, React-Native, GitHub, MariaDb, Flask (Python) Docker_
 
 &nbsp;
 
@@ -74,16 +75,16 @@ Finir le développement de site
 
 #### **Équipe**
 
-* 1 Lead Dev, 1 développeur Front-Stack Nestjs
+- 1 Lead Dev, 1 développeur Front-Stack Nestjs
 
 #### **Actions réalisées**
 
-* Reprise et finalisation d’un existant et apport de nouvelles fonctionnalités  
-* Développement de la gestion de l’inscription des candidats et des pharmacies en **React** et **Node.js** (**TypeORM**)  
-* Développement de la gestion des offres d’emploi des pharmacies en **React** et **Node.js** (TypeORM)  
-* Développement d’une interface de signature électronique entre les candidats et les pharmacies  
-* Réalisation de tests manuels et fonctionnels (Cypress)  
-* Intégration continue avec **CircleCI**  
-* Tests avec **Cypress**  
+- Reprise et finalisation d’un existant et apport de nouvelles fonctionnalités
+- Développement de la gestion de l’inscription des candidats et des pharmacies en **React** et **Node.js** (**TypeORM**)
+- Développement de la gestion des offres d’emploi des pharmacies en **React** et **Node.js** (TypeORM)
+- Développement d’une interface de signature électronique entre les candidats et les pharmacies
+- Réalisation de tests manuels et fonctionnels (Cypress)
+- Intégration continue avec **CircleCI**
+- Tests avec **Cypress**
 
-***Environnement technique*** : *React, Node.js, TypeScript, GitHub, PostgreSQL, Docker, TypeORM, Cypress*
+**_Environnement technique_** : _React, Node.js, TypeScript, GitHub, PostgreSQL, Docker, TypeORM, Cypress_
