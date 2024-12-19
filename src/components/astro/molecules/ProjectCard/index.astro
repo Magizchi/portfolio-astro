@@ -47,13 +47,18 @@ const { title, img, description, githubUrl, url, packages } = Astro.props;
 			>
 				<Icon name="github-line" class="mr-1" />Code source</a
 			>
-			<a
-				href={'https://open-quittance.rajanan.dev'}
-				target="_blank"
-				class="flex min-w-20 items-center justify-center rounded-lg bg-white px-2 py-1 text-sm text-[#0b192c] hover:bg-transparent hover:text-white"
-			>
-				<Icon name="global-line" class="mr-1" />Site web</a
-			>
+			{
+				url !== '' && (
+					<a
+						href={url}
+						target="_blank"
+						class="flex min-w-20 items-center justify-center rounded-lg bg-white px-2 py-1 text-sm text-[#0b192c] hover:bg-transparent hover:text-white"
+					>
+						<Icon name="global-line" class="mr-1" />
+						Site web
+					</a>
+				)
+			}
 		</div>
 	</div>
 </div>
