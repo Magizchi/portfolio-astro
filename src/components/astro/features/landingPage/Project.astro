@@ -13,7 +13,7 @@ const allProjects: CollectionEntry<'project'>[] = await getCollection('project')
 </div>
 <ul class="gap flex flex-row gap-3">
 	{
-		allProjects.map((item) => {
+		allProjects.reverse().map((item) => {
 			if (!item.data.hidden) {
 				return (
 					<li>
