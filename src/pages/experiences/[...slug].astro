@@ -1,9 +1,9 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import MainLayout from '@layouts/MainLayout.astro';
+import MainLayout from '@components/templates/MainLayout.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
-import XpLayout from '@layouts/XpLayout.astro';
+import XpLayout from '@components/organisms/CardSection.astro';
 
 export const getStaticPaths = (async () => {
 	const experience: CollectionEntry<'experience'>[] = await getCollection('experience');
