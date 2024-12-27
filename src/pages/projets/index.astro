@@ -1,15 +1,15 @@
 ---
-import ProjectCard from '@components/astro/molecules/ProjectCard/index.astro';
-import { SITE_PROJECTS_DESCRIPTION, SITE_TITLE_PROJECTS } from '@constants/consts';
+import ProjectCard from '@components/molecules/ProjectCard.astro';
+import { SITE_PROJECTS_DESCRIPTION, SITE_TITLE_PROJECTS } from '../../constants';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import MainLayout from '@layouts/MainLayout.astro';
-import XpLayout from '@layouts/XpLayout.astro';
+import MainLayout from '@components/templates/MainLayout.astro';
+import CardSection from '@components/organisms/CardSection.astro';
 
 const allProjects: CollectionEntry<'project'>[] = await getCollection('project');
 ---
 
 <MainLayout title={SITE_TITLE_PROJECTS} description={SITE_PROJECTS_DESCRIPTION}>
-	<XpLayout title="Projets">
+	<CardSection title="Projets">
 		<ul class="gap flex flex-row gap-8">
 			{
 				allProjects.map((item) => (
@@ -19,5 +19,5 @@ const allProjects: CollectionEntry<'project'>[] = await getCollection('project')
 				))
 			}
 		</ul>
-	</XpLayout>
+	</CardSection>
 </MainLayout>

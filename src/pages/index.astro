@@ -1,10 +1,8 @@
 ---
-import Hero from '@components/astro/features/landingPage/Hero.astro';
-import BaseLayout from '@layouts/BaseLayout.astro';
-import Card from '@components/astro/atoms/Card.astro';
-import Project from '@components/astro/features/landingPage/Project.astro';
-import Books from '@components/astro/features/landingPage/Books.astro';
-import Experience from '@components/astro/features/landingPage/Experience.astro';
+import Hero from './_Hero.astro';
+import BaseLayout from '@components/templates/BaseLayout.astro';
+import Project from './_Project.astro';
+import Experience from './_Experience.astro';
 import { Icon } from 'astro-icon/components';
 ---
 
@@ -27,9 +25,4 @@ import { Icon } from 'astro-icon/components';
 		</div>
 		<Project />
 	</section>
-	<!-- 
-	
-		<Card colSpan="col-span-2 row-span-3">
-			<Books />
-		</Card> -->
 </BaseLayout>
