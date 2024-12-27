@@ -1,41 +1,24 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "exclude": [
-    "dist"
-  ],
-  "compilerOptions": {
-    "strictNullChecks": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "baseUrl": "src",
-    "paths": {
-      "@layouts/*": [
-        "layouts/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@utils": [
-        "utils/*"
-      ],
-      "@types": [
-        "types"
-      ],
-      "@constants/*": [
-        "constants/*"
-      ],
-      "@public/*":[
-        "../public/*"
-      ],
-      "@content/*":[
-        "content/*"
-      ]
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+	"extends": "astro/tsconfigs/strict",
+	"exclude": ["dist"],
+	"compilerOptions": {
+		"strictNullChecks": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"baseUrl": "src",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@utils": ["utils/*"],
+			"@types": ["types"],
+			"@public/*": ["../public/*"],
+			"@content/*": ["content/*"],
+			"@styles:*": ["styles/*"]
+		},
+		"jsx": "react-jsx",
+		"jsxImportSource": "react"
+	}
 }
