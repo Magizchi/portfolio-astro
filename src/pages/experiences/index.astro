@@ -1,17 +1,17 @@
 ---
-import MainLayout from '@layouts/MainLayout.astro';
-import { SITE_DESCRIPTION_EXPERIENCE, SITE_TITLE_EXPERIENCE } from '@constants/consts.ts';
+import MainLayout from '@components/templates/MainLayout.astro';
+import { SITE_DESCRIPTION_EXPERIENCE, SITE_TITLE_EXPERIENCE } from '../../constants';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import XpLayout from '@layouts/XpLayout.astro';
+import CardSection from '@components/organisms/CardSection.astro';
 import dayjs from 'dayjs';
-import Badge from '@components/astro/atoms/Badge.astro';
+import Badge from '@components/atoms/Badge.astro';
 import { Icon } from 'astro-icon/components';
 
 const allExperience: CollectionEntry<'experience'>[] = await getCollection('experience');
 ---
 
 <MainLayout title={SITE_TITLE_EXPERIENCE} description={SITE_DESCRIPTION_EXPERIENCE}>
-	<XpLayout
+	<CardSection
 		title="Éxperiences"
 		description="Voici un aperçu des lieux où j’ai travaillé, un simple résumé chronologique sans entrer dans les détails."
 	>
@@ -53,5 +53,5 @@ const allExperience: CollectionEntry<'experience'>[] = await getCollection('expe
 					})
 			}
 		</div>
-	</XpLayout>
+	</CardSection>
 </MainLayout>

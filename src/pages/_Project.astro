@@ -1,0 +1,21 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import ProjectCard from '@components/molecules/ProjectCard.astro';
+
+const allProjects: CollectionEntry<'project'>[] = await getCollection('project');
+---
+
+<h2 class="font-satoshi mb-3 text-3xl font-bold text-white">Projets</h2>
+<ul class="gap flex flex-row gap-3">
+	{
+		allProjects.reverse().map((item) => {
+			if (!item.data.hidden) {
+				return (
+					<li>
+						<ProjectCard {...item.data} />
+					</li>
+				);
+			}
+		})
+	}
+</ul>

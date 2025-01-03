@@ -1,0 +1,87 @@
+---
+import { link_Github, link_LinkedIn } from '../constants';
+import { Icon } from 'astro-icon/components';
+const techno = [
+	{
+		icon: 'ri:reactjs-fill',
+		label: 'React',
+		class: 'react'
+	},
+	{
+		icon: 'typescript-line',
+		label: 'TypeScript',
+		class: 'typescript'
+	},
+	{
+		icon: 'ri:svelte-fill',
+		label: 'Svelte',
+		class: 'svelte'
+	},
+	{
+		icon: 'ri:nodejs-fill',
+		label: 'Node.js',
+		class: 'node'
+	},
+	{
+		icon: 'ri:tailwind-css-fill',
+		label: 'Tailwind',
+		class: 'typescript'
+	}
+];
+---
+
+<div class="gap flex flex-col gap-8">
+	<div class="flex flex-col gap-4">
+		<div class="gap flex flex-col gap-0">
+			<h1 class="font-satoshi text-2xl font-extrabold text-white lg:text-3xl">
+				Bonjour, je suis <span class="text-[#FF6F3C]">Rajanan</span>
+			</h1>
+			<p class="font-hind flex items-start text-white lg:items-center">
+				<span class="m-1">
+					<Icon name="ri:earth-line" class="" />
+				</span>
+				<span> Paris, France, Terre, 3ème planète du système solaire</span>
+			</p>
+		</div>
+		<p class="font-hind text-wrap text-left text-white">
+			Je suis développeur Full-Stack avec 5 ans d'expérience. J’aime l’exploration, que ce soit avec
+			la science-fiction, les jeux vidéos ou les mangas.
+		</p>
+	</div>
+	<ul class="gap flex flex-row gap-4 text-white">
+		{
+			techno.map((item) => (
+				<li class="flex flex-col items-center text-[#BDD6F2]">
+					<div class="flex items-center justify-center">
+						<Icon name={item.icon} class="text-3xl font-normal" />
+					</div>
+					<div class="font-hind flex min-w-10 items-center">{item.label}</div>
+				</li>
+			))
+		}
+	</ul>
+	<div class="gap flex flex-col items-center gap-8 sm:flex-row">
+		<a
+			href="mailto:rajan.g@outlook.fr"
+			class="font-hind flex items-center rounded-lg bg-white px-6 py-3 font-bold text-[#0b192c] hover:border-[#FF6F3C] hover:bg-[#FF6F3C] hover:text-[#0b192c]"
+			>Contactez moi</a
+		>
+		<a
+			href="/cv-rajanan-ganesalingam-2024.pdf"
+			download
+			target="_blank"
+			class="flex items-center text-white underline decoration-2 underline-offset-4 hover:no-underline"
+		>
+			<Icon name="ri:file-pdf-2-fill" class="font-hind mr-1 text-2xl font-semibold text-white" />Mon
+			CV
+		</a>
+		<div class="gap flex flex-row gap-4">
+			<a href={link_Github} target="_blank" class="text-2xl text-white hover:text-gray-500">
+				<Icon name="ri:github-fill" />
+			</a>
+			<a href={link_LinkedIn} target="_blank" class="text-2xl text-white hover:text-gray-500">
+				<Icon name="ri:linkedin-fill" />
+			</a>
+		</div>
+	</div>
+</div>

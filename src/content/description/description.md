@@ -1,3 +1,0 @@
-<h1 style="font-weight:700;font-size:20px"> Rajanan GANESALINGAM </h1>
-
-Je suis un développeur full stack avec 4 ans d'expérience dans la création d'applications web. Ma spécialisation en React.js, Node.js et les langages essentiels tels que JavaScript, HTML et CSS m'a permis de créer des interfaces interactives et esthétiques. Mon parcours m'a motivé à rester constamment à l'affût des dernières avancées technologiques, alimentant ainsi ma passion pour le développement et me poussant à repousser les limites.

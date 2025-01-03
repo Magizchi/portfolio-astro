@@ -1,0 +1,64 @@
+---
+import Badge from '@components/atoms/Badge.astro';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+
+const { title, img, description, githubUrl, url, packages } = Astro.props;
+---
+
+<div class="flex h-full min-h-60 w-64 flex-col rounded-lg border border-[#1E3E62] p-4">
+	{
+		img && (
+			<Image
+				src={img}
+				width={260}
+				height={260}
+				format="webp"
+				alt={title}
+				class="hidden max-w-full rounded-lg lg:block"
+			/>
+		)
+	}
+	<div class="gap flex w-full grow flex-col justify-between gap-8 pt-3">
+		<div class="gap flex flex-col gap-1">
+			<div class="gap flex flex-col gap-0">
+				<h1 class="text-xl font-bold text-white">
+					{title}
+				</h1>
+				<p class="py-1 text-sm text-white">{description}</p>
+			</div>
+			<p class="py-1">
+				<ul class="gap flex flex-row gap-3">
+					{
+						packages.map((item: string) => (
+							<li>
+								<Badge>{item}</Badge>
+							</li>
+						))
+					}
+				</ul>
+			</p>
+		</div>
+		<div class="gap flex gap-5">
+			<a
+				href={githubUrl}
+				target="_blank"
+				class="flex min-w-20 items-center justify-center rounded-full px-2 py-1 text-sm text-white underline decoration-2 underline-offset-4 hover:no-underline"
+			>
+				<Icon name="ri:github-line" class="mr-1" />Code source</a
+			>
+			{
+				url !== '' && (
+					<a
+						href={url}
+						target="_blank"
+						class="flex min-w-20 items-center justify-center rounded-lg bg-white px-2 py-1 text-sm text-[#0b192c] hover:bg-transparent hover:text-white"
+					>
+						<Icon name="ri:global-line" class="mr-1" />
+						Site web
+					</a>
+				)
+			}
+		</div>
+	</div>
+</div>
