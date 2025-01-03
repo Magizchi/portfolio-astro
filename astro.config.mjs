@@ -6,7 +6,7 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://rajanan.dev',
+	site: 'https://www.rajanan.dev',
 	integrations: [
 		mdx(),
 		sitemap(),
