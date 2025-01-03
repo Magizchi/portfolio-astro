@@ -17,13 +17,12 @@ jobs:
 
       - name: Install
         run: npm ci
-      
+
       - name: build
         run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
           branch: gh-pages
           folder: dist
-      
