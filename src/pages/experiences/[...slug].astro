@@ -4,22 +4,23 @@ import MainLayout from '@components/templates/MainLayout.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import XpLayout from '@components/organisms/CardSection.astro';
+import { render } from 'astro:content';
 
 export const getStaticPaths = (async () => {
 	const experience: CollectionEntry<'experience'>[] = await getCollection('experience');
 
 	return experience.map((post: any) => ({
-		params: { slug: post.slug },
+		params: { slug: post.id },
 		props: post
 	}));
 }) satisfies GetStaticPaths;
-
-const { Content } = await Astro.props.render();
-const t = Astro.props;
+type Props = CollectionEntry<'experience'>;
+const post = Astro.props;
+const { Content } = await render(post);
 ---
 
 <MainLayout>
-	<XpLayout title={t.data.company}>
+	<XpLayout title={post.data.company}>
 		<div class="flex justify-center">
 			<div class="prose !text-white">
 				<Content />
