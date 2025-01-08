@@ -1,12 +1,18 @@
 ---
+import { Icon } from 'astro-icon/components';
 const { title, description } = Astro.props;
 ---
 
 <section class="flex w-full max-w-3xl justify-center bg-[#14213D]/80 p-5 text-white">
 	<div class="gap flex flex-col gap-5">
-		<div class="flex flex-col items-center border-b-2 p-5">
-			<h2 class="text-xl font-bold">{title}</h2>
-			<p class="text-center">{description}</p>
+		<div class="relative flex flex-row items-center border-b-2 py-5">
+			<a href="/">
+				<Icon name="arrow-left" class="absolute text-xl" />
+			</a>
+			<div class="flex w-full flex-col text-center">
+				<h2 class="text-xl font-bold">{title}</h2>
+				<p class="text-center">{description}</p>
+			</div>
 		</div>
 		<slot />
 	</div>

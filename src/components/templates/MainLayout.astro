@@ -6,13 +6,12 @@ const { image, title, description = 'SITE_DESCRIPTION' } = Astro.props;
 import '@styles:index.css';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <meta charset="utf-8" />
 <html lang="fr">
 	<head>
 		<BaseHead title={title} description={description} image={image} />
 	</head>
-	<Header />
 	<body class="relative">
 		<main class="container mx-auto flex max-w-6xl justify-center pt-10">
 			<slot />
