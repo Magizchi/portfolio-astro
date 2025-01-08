@@ -3,7 +3,7 @@ company: Weblagence
 startDate: Nov 2019
 endDate: Dec 2019
 companyLogo: ''
-description: Migration de PHP à React
+description: Plate-forme qui propose des droits sur des romans pour le monde du cinéma
 post: Développeur Front-end
 hidden: false
 title: LE REACTEUR

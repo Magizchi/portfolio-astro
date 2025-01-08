@@ -1,6 +1,6 @@
 ---
-title: Stage ALTYOR
-company: ALTYOR
+title: Altyor
+company: Altyor
 startDate: Mai 2019
 endDate: Oct 2019
 description: Développer plusieurs applications web pour la gestion interne des collaborateurs.

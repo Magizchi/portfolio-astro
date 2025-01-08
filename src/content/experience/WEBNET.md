@@ -1,6 +1,6 @@
 ---
-title: 'WEBNET'
-company: 'WEBNET'
+title: 'Webnet'
+company: 'Webnet'
 description: Répondre aux besoins des clients pour le développement de leurs applications.
 startDate: 'Avr 2023'
 endDate: 'Nov 2023'
