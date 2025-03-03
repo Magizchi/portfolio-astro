@@ -1,5 +1,5 @@
 ---
-company: Horizon Pharma
+company: ZLZ HOLDING - Horizon Pharma
 startDate: Fév 2021
 endDate: Janv 2022
 description: Développement d'une applications web et mobiles pour la gestion des livraisons.

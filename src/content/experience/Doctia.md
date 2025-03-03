@@ -1,5 +1,5 @@
 ---
-company: Doctia
+company: ZLZ HOLDING - Doctia
 startDate: Sept 2020
 endDate: Fév 2021
 description: Site web qui permet de recruter des préparateurs en Pharmacie.
