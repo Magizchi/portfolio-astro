@@ -1,5 +1,5 @@
 ---
-company: Parashop
+company: ZLZ HOLDING - Parashop
 startDate: Janv 2022
 endDate: Janv 2023
 description: Développement d'une applications web et mobiles pour la gestion des commandes et des stocks des magasins.
